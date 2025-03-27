@@ -11,7 +11,7 @@ const Mainsection = () => {
             <h2 className='fw-bold m-0 fs-2'>Hi i'm</h2>
             <h1 className='fw-bold m-0 display-3'>Yash Nagla</h1>
             <h3 className='fw-semibold m-0 fs-4'>Junior Software Developer</h3>
-            <a href="./Yash Nagla.pdf" target='_blank'><button className='btn border border-3 border-dark fw-bold m-0 px-4 py-2 mt-3' style={{width : "fit-content"}}>Resume</button></a>
+            <a href="./Yash Nagla.pdf"><button className='btn border border-3 border-dark fw-bold m-0 px-4 py-2 mt-3' style={{width : "fit-content"}}>Resume</button></a>
           </div>
           <div className="col-12 col-md-6 d-flex justify-content-center">
             <svg id="sw-js-blob-svg" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
