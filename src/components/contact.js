@@ -1,6 +1,10 @@
-import mail from '../image/icons/mail.png' 
-import phone from '../image/icons/call.png' 
-import location from '../image/icons/loaction.png' 
+// import mail from '../image/icons/mail.svg' 
+// import phone from '../image/icons/call.svg' 
+// import location from '../image/icons/location.svg'
+
+import mail from '../image/icons/mail.svg'
+import phone from '../image/icons/call.svg'
+import location from '../image/icons/location.svg'
 
 function Contact() {
     return (
@@ -46,8 +50,8 @@ function Contact() {
                                 <a href="https://www.linkedin.com/in/yash-sikhwal-nagla/"><i className="fa-brands fa-linkedin-in text-white bg-1e3e50 fs-3 bg-f9fafb p-2 rounded-circle"></i></a>
                                 <a href="https://www.instagram.com/yash.nagla"><i className="fa-brands fa-instagram text-white bg-1e3e50 fs-3 bg-f9fafb p-2 rounded-circle"></i></a>
                             </div>
-
                         </div>
+
                         <div className="col-12 col-lg-8">
                             <form className='bg-white rounded-3 p-4 '>
                                 <h3 className='text-2c3e50 mb-4'>Send Me a Message</h3>

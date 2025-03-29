@@ -29,7 +29,7 @@ function Projects() {
                         <div className="col-12 col-lg-6">
                             <div className="card p-3 shadow rounded-3">
                                 <div className="card-header bg-transparent border-0">
-                                    <video controls class="img-fluid rounded-3 h-100" autoplay src="videos/incrypr.mp4" type="video/mp4" />
+                                    <video controls class="img-fluid object-fit-scale rounded-3" autoplay src="videos/incrypr.mp4" type="video/mp4" />
                                 </div>
                                 <div className="card-body">
                                     <h4 className='text-2c3e50'>Incrypr</h4>
