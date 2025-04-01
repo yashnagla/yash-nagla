@@ -22,7 +22,7 @@ function App() {
       <Projects />
       <Experience />
       <Education />
-      <Certification />
+      {/* <Certification /> */}
       <Contact />
       <Footer />
     </>

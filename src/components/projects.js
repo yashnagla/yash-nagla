@@ -15,13 +15,13 @@ function Projects() {
                                 </div>
                                 <div className="card-body">
                                     <h4 className='text-2c3e50'>Sevayatan Hospital</h4>
-                                    <p className='text-374151 fw-500'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi nesciunt dicta suscipit cupiditate. Quidem, itaque iure dolor tempore qui enim.</p>
+                                    <p className='text-374151 fw-500 m-0'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi nesciunt dicta suscipit cupiditate. Quidem, itaque iure dolor tempore qui enim.</p>
                                     {/* Technologies */}
                                     <div className="technology d-flex gap-3 overflow-x-scroll py-2" style={{scrollbarWidth : "none"}}>
-                                        <span class="badge bg-edf7ed text-6caf50 rounded-pill fw-medium fs-10px px-3 py-1">HTML5</span>
-                                        <span class="badge bg-edf7ed text-6caf50 rounded-pill fw-medium fs-10px px-3 py-1">CSS</span>
-                                        <span class="badge bg-edf7ed text-6caf50 rounded-pill fw-medium fs-10px px-3 py-1">Bootstrap</span>
-                                        <span class="badge bg-edf7ed text-6caf50 rounded-pill fw-medium fs-10px px-3 py-1">JavaScript</span>
+                                        <span class="badge bg-edf7ed text-6caf50 rounded-pill fw-medium fs-14px px-3 py-2">HTML5</span>
+                                        <span class="badge bg-edf7ed text-6caf50 rounded-pill fw-medium fs-14px px-3 py-2">CSS</span>
+                                        <span class="badge bg-edf7ed text-6caf50 rounded-pill fw-medium fs-14px px-3 py-2">Bootstrap</span>
+                                        <span class="badge bg-edf7ed text-6caf50 rounded-pill fw-medium fs-14px px-3 py-2">JavaScript</span>
                                     </div>
                                 </div>
                             </div>
@@ -33,13 +33,13 @@ function Projects() {
                                 </div>
                                 <div className="card-body">
                                     <h4 className='text-2c3e50'>Incrypr</h4>
-                                    <p className='text-374151 fw-500'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi nesciunt dicta suscipit cupiditate. Quidem, itaque iure dolor tempore qui enim.</p>
+                                    <p className='text-374151 fw-500 m-0'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi nesciunt dicta suscipit cupiditate. Quidem, itaque iure dolor tempore qui enim.</p>
                                     {/* Technologies */}
                                     <div className="technology d-flex gap-3 overflow-x-scroll py-2" style={{scrollbarWidth : "none"}}>
-                                        <span class="badge bg-edf7ed text-6caf50 rounded-pill fw-medium fs-10px px-3 py-1">HTML5</span>
-                                        <span class="badge bg-edf7ed text-6caf50 rounded-pill fw-medium fs-10px px-3 py-1">CSS</span>
-                                        <span class="badge bg-edf7ed text-6caf50 rounded-pill fw-medium fs-10px px-3 py-1">Bootstrap</span>
-                                        <span class="badge bg-edf7ed text-6caf50 rounded-pill fw-medium fs-10px px-3 py-1">JavaScript</span>
+                                        <span class="badge bg-edf7ed text-6caf50 rounded-pill fw-medium fs-14px px-3 py-2">HTML5</span>
+                                        <span class="badge bg-edf7ed text-6caf50 rounded-pill fw-medium fs-14px px-3 py-2">CSS</span>
+                                        <span class="badge bg-edf7ed text-6caf50 rounded-pill fw-medium fs-14px px-3 py-2">Bootstrap</span>
+                                        <span class="badge bg-edf7ed text-6caf50 rounded-pill fw-medium fs-14px px-3 py-2">JavaScript</span>
                                     </div>
                                 </div>
                             </div>
