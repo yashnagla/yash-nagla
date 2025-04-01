@@ -1,6 +1,6 @@
 import './App.css';
 import About from './components/about';
-import Certification from './components/certification';
+// import Certification from './components/certification';
 import Contact from './components/contact';
 import Education from './components/education';
 import Experience from './components/experience';
