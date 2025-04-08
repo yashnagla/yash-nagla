@@ -28,9 +28,9 @@ function Navbar() {
                                 <li className="nav-item">
                                     <a className="nav-link text-2c3e50" aria-current="page" href="#education">Education</a>
                                 </li>
-                                <li className="nav-item">
+                                {/* <li className="nav-item">
                                     <a className="nav-link text-2c3e50" aria-current="page" href="#certification">Certification</a>
-                                </li>
+                                </li> */}
                                 <li className="nav-item">
                                     <a className="nav-link text-2c3e50" aria-current="page" href="#contact">Contact</a>
                                 </li>
