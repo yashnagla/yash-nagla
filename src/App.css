@@ -1,13 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=Underdog&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
 
 body {
-    font-family: "Underdog", system-ui !important;
+  font-family: "Playfair Display", serif;
 }
 
 /* Root */
 .border-left-4caf50{
   border-left: 5px solid #4caf50;
 }
+
 .border-4caf50{
   border: 5px solid #4caf50;
 }
