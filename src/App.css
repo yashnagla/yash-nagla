@@ -13,8 +13,8 @@ body {
   border: 5px solid #4caf50;
 }
 
-.text-6caf50{
-  color: #6caf50;
+.text-3b6b26{
+  color: #3b6b26;
 }
 .text-333333{
   color: #333333;
@@ -92,10 +92,12 @@ body {
 /* Main Section */
 .profilepic-height{
   height: 420px;
+  width: 420px;
 }
 @media screen and (max-width : 992px) {
   .profilepic-height{
     height: 300px;
+    width: 300px;
   }
 }
 
