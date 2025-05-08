@@ -7,7 +7,7 @@ function Experience() {
                     <h2 className="text-center text-2c3e50 fw-semibold mb-3">Experience</h2>
                     <div className="row g-4">
                         {/* KVON Tech */}
-                        <div className="col-12 col-md-6">
+                        <div className="col-12 col-lg-6">
                             <div className="border-left-4caf50 rounded-4 p-3 bg-white shadow">
                                 <h3>Associate Software Developer</h3>
                                 <p className=" mb-2 text-6caf50"><i class="fa-solid fa-briefcase"></i> KVON Tech</p>
@@ -21,7 +21,7 @@ function Experience() {
                             </div>
                         </div>
                         {/* KVON Tech */}
-                        <div className="col-12 col-md-6">
+                        <div className="col-12 col-lg-6">
                             <div className="border-left-4caf50 rounded-4 p-3 bg-white shadow">
                                 <h3>Front-end Web Intern</h3>
                                 <p className=" mb-2 text-6caf50"><i class="fa-solid fa-briefcase"></i> KVON Tech</p>

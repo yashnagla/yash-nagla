@@ -72,7 +72,7 @@ function Skills() {
                             </div>
                         </div>
                         <div className="col-12 col-sm-6">
-                            <div className="card p-3 shadow">
+                            <div className="card p-3 shadow h-100">
                                 <div className="card-header bg-transparent border-0 d-flex gap-3 align-items-center">
                                     <img src={frontendPic} className='img-fliud' alt="Front End Pic" />
                                     <p className='fs-5 fw-semibold text-2c3e50 m-0'>Backend</p>
