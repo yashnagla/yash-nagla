@@ -7,7 +7,7 @@ function Footer() {
                     <div className="d-flex justify-content-between flex-column flex-md-row g-3 text-white text-center text-md-start">
                         <div className="py-3 py-lg-0">
                             <h2 className="fw-semibold">Yash Nagla</h2>
-                            <h4>Junior Software Developer</h4>
+                            <h4>Associate Software Developer</h4>
                         </div>
                         <div>
                             <h3 className="fw-semibold">Get in Touch</h3>

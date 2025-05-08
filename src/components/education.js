@@ -2,7 +2,7 @@ function Education() {
     return (
         <>
             {/* Education */}
-            <div className="container-fluid bg-f9fafb pb-5" id="education">
+            <div className="container-fluid bg-f9fafb py-5" id="education">
                 <div className="container p-0">
                     <h2 className="text-center text-2c3e50 fw-semibold mb-3">Education</h2>
                     <div className="row g-3">

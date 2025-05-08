@@ -13,10 +13,10 @@ import Skills from './components/skills';
 function App() {
   return (
     <>
-      <div className="h-100vh bg-f4f4f4">
-        <Navbar />
-        <Main />
-      </div>
+      <Navbar />
+      <Main />
+      {/* <div className="h-100vh bg-f4f4f4"> */}
+      {/* </div> */}
       <About />
       <Skills />
       <Projects />

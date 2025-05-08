@@ -11,7 +11,7 @@ function Skills() {
                 <div className="container p-0">
                     <h2 className="text-center text-2c3e50 fw-semibold mb-3">Skills</h2>
                     <div className="row justify-content-center mb-4">
-                        <div className="col-12 ">
+                        <div className="col-12 col-sm-6 mb-3 mb-sm-0">
                             <div className="card p-3 shadow">
                                 <div className="card-header bg-transparent border-0 d-flex gap-3 align-items-center">
                                     <img src={frontendPic} className='img-fliud' alt="Front End Pic" />
@@ -66,6 +66,36 @@ function Skills() {
                                         </div>
                                         <div className="progress h-10px" role="progressbar" aria-label="Success example" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
                                             <div className="progress-bar bg-4caf50" style={{width : "75%"}}></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="col-12 col-sm-6">
+                            <div className="card p-3 shadow">
+                                <div className="card-header bg-transparent border-0 d-flex gap-3 align-items-center">
+                                    <img src={frontendPic} className='img-fliud' alt="Front End Pic" />
+                                    <p className='fs-5 fw-semibold text-2c3e50 m-0'>Backend</p>
+                                </div>
+                                <div className="card-body">
+                                    {/* MySQL */}
+                                    <div className="html mb-3">
+                                        <div className='d-flex justify-content-between'>
+                                            <span className='mb-1'>MySQL</span>
+                                            <span className='mb-1 text-4b5563'>40%</span>
+                                        </div>
+                                        <div className="progress h-10px" role="progressbar" aria-label="Success example" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                                            <div className="progress-bar bg-4caf50" style={{width : "40%"}}></div>
+                                        </div>
+                                    </div>
+                                    {/* NodeJS */}
+                                    <div className="html mb-3">
+                                        <div className='d-flex justify-content-between'>
+                                            <span className='mb-1'>NodeJS</span>
+                                            <span className='mb-1 text-4b5563'>50%</span>
+                                        </div>
+                                        <div className="progress h-10px" role="progressbar" aria-label="Success example" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                                            <div className="progress-bar bg-4caf50" style={{width : "50%"}}></div>
                                         </div>
                                     </div>
                                 </div>

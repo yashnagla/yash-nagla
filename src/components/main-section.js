@@ -8,8 +8,8 @@ function Main() {
     return (
         <>
             {/* Main section */}
-            <section className="main-section pt-5 pb-3 d-flex align-items-center" id='main-section'>
-                <div className="container-fluid py-5 py-lg-0">
+            <section className="main-section pt-5 d-flex align-items-center" id='main-section'>
+                <div className="container-fluid pt-5">
                     <div className="container px-0">
                         <div className="row g-3 g-lg-5">
                             <div className="col-12 col-lg-6 d-flex flex-column justify-content-center">
