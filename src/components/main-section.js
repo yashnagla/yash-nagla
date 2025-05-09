@@ -1,4 +1,4 @@
-import profilePic from"../image/LinkedIn-DP-min.png";function Main(){return<>
+import profilePic from"../image/LinkedIn-DP.png";function Main(){return<>
 
 
 
@@ -58,7 +58,7 @@ import profilePic from"../image/LinkedIn-DP-min.png";function Main(){return<>
 
 
 
-                                <img src={profilePic}className="border-4caf50 img-fluid rounded-circle profilepic-height" alt="profilePic" loading="eager" />
+                                <img src={profilePic}className="img-fluid rounded-circle maintain-images" alt="profilePic" loading="eager" />
 
 
 

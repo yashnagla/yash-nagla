@@ -13,6 +13,7 @@
     "react-dom": "^19.0.0",
     "react-player": "^2.16.0",
     "react-scripts": "5.0.1",
+    "sharp": "^0.34.1",
     "web-vitals": "^2.1.4"
   },
   "scripts": {

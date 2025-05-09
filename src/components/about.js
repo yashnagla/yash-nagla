@@ -1,4 +1,4 @@
-import e from"../image/about-section-image.png";function About(){return<>
+import aboutSectionImage from"../image/about-section-image.png";function About(){return<>
 
 
 
@@ -26,7 +26,7 @@ import e from"../image/about-section-image.png";function About(){return<>
 
 
 
-                            <img src={e}className="img-fluid rounded-3 w-100 mb-3 mb-lg-0"alt="profilePic"/>
+                            <img src={aboutSectionImage}className="img-fluid mb-3 mb-lg-0 rounded-3"alt="profilePic"/>
 
 
 
@@ -34,15 +34,7 @@ import e from"../image/about-section-image.png";function About(){return<>
 
 
 
-                        <div className="col-12 col-lg-6">
-
-
-
-                            {}
-
-
-
-                            {}
+                        <div className="col-12 col-lg-6 d-flex align-items-center">
 
 
 

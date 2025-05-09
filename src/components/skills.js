@@ -1,4 +1,4 @@
-import e from"../image/icons/frontend.svg";import t from"../image/icons/git-github.svg";import r from"../image/icons/responsive-design.svg";import s from"../image/icons/sql.svg";function Skills(){return<>
+import frontend from"../image/icons/frontend.svg";import git from"../image/icons/git-github.svg";import responsiveDesign from"../image/icons/responsive-design.svg";import sql from"../image/icons/sql.svg";function Skills(){return<>
 
 
 
@@ -34,7 +34,7 @@ import e from"../image/icons/frontend.svg";import t from"../image/icons/git-gith
 
 
 
-                                    <img src={e}className="img-fliud"alt="Front End Pic"/>
+                                    <img src={frontend}className="img-fliud"alt="Front End Pic"/>
 
 
 
@@ -274,7 +274,7 @@ import e from"../image/icons/frontend.svg";import t from"../image/icons/git-gith
 
 
 
-                                    <img src={e}className="img-fliud"alt="Front End Pic"/>
+                                    <img src={frontend}className="img-fliud"alt="Front End Pic"/>
 
 
 
@@ -406,7 +406,7 @@ import e from"../image/icons/frontend.svg";import t from"../image/icons/git-gith
 
 
 
-                                    <img src={t}className="img-fliud"alt="Front End Pic"/>
+                                    <img src={git}className="img-fliud"alt="Front End Pic"/>
 
 
 
@@ -446,7 +446,7 @@ import e from"../image/icons/frontend.svg";import t from"../image/icons/git-gith
 
 
 
-                                    <img src={r}className="img-fliud"alt="Front End Pic"/>
+                                    <img src={responsiveDesign}className="img-fliud"alt="Front End Pic"/>
 
 
 
@@ -486,7 +486,7 @@ import e from"../image/icons/frontend.svg";import t from"../image/icons/git-gith
 
 
 
-                                    <img src={s}className="img-fliud"alt="Front End Pic"/>
+                                    <img src={sql}className="img-fliud"alt="Front End Pic"/>
 
 
 

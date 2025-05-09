@@ -1,4 +1,4 @@
-import e from"../image/sevayatan-min.png";import t from"../image/sbcet-min.png";function Projects(){return<>
+import sevayatan from"../image/sevayatan.png";import sbcet from"../image/sbcet.png";function Projects(){return<>
 
 
 
@@ -35,17 +35,8 @@ import e from"../image/sevayatan-min.png";import t from"../image/sbcet-min.png";
 
 
                                 <div className="col-12 col-lg-6 bg-transparent border-0 mb-3 mb-lg-0">
-
-
-
-                                    <img src={e}className="img-fluid border rounded-3 h-100"alt="sevayatan"/>
-
-
-
+                                    <img src={sevayatan}className="img-fluid border rounded-3 maintain-images" alt="sevayatan"/>
                                 </div>
-
-
-
                                 <div className="col-12 col-lg-6 d-flex flex-column justify-content-center">
 
 
@@ -119,17 +110,8 @@ import e from"../image/sevayatan-min.png";import t from"../image/sbcet-min.png";
 
 
                                 <div className="col-12 col-lg-6 bg-transparent border-0 mb-3 mb-lg-0">
-
-
-
-                                    <img src={t}className="img-fluid border rounded-3 h-100"alt="sevayatan"/>
-
-
-
+                                    <img src={sbcet}className="img-fluid border rounded-3 maintain-images" alt="sevayatan"/>
                                 </div>
-
-
-
                                 <div className="col-12 col-lg-6 d-flex flex-column justify-content-center">
 
 

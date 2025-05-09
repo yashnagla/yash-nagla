@@ -90,18 +90,6 @@ body {
 }
 
 /* Main Section */
-.profilepic-height{
-  height: 420px;
-  width: 420px;
-}
-@media screen and (max-width : 992px) {
-  .profilepic-height{
-    height: 300px;
-    width: 300px;
-  }
-}
-
-
 .view-work-btn:hover, .submit-btn:hover{
   background: #405060;
 }
@@ -118,4 +106,12 @@ body {
 .input-group input, .input-group textarea{
   color: black;
   font-weight: 600;
+}
+
+/* Project Section */
+.maintain-images{
+  height: auto;
+  width: 100%;
+  object-fit: contain;
+  aspect-ratio: 1.93;
 }
