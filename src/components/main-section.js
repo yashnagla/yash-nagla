@@ -2,11 +2,11 @@ import profilePic from"../image/LinkedIn-DP.png";function Main(){return<>
 
 
 
-            <section className="main-section pt-5 d-flex align-items-center"id="main-section">
+            <section className="main-section d-flex align-items-center"id="main-section">
 
 
 
-                <div className="container-fluid pt-5">
+                <div className="container-fluid">
 
 
 
@@ -18,7 +18,7 @@ import profilePic from"../image/LinkedIn-DP.png";function Main(){return<>
 
 
 
-                            <div className="col-12 col-lg-6 d-flex flex-column justify-content-center">
+                            <div className="col-12 col-lg-6 m-0 d-flex flex-column justify-content-center">
 
 
 
@@ -54,7 +54,7 @@ import profilePic from"../image/LinkedIn-DP.png";function Main(){return<>
 
 
 
-                            <div className="col-12 col-lg-6 d-flex justify-content-center justify-content-lg-end">
+                            <div className="col-12 col-lg-6 m-0 d-flex justify-content-center justify-content-lg-end">
 
 
 

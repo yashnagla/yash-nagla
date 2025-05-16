@@ -78,7 +78,7 @@ function Footer(){return<>
 
 
 
-            <p className="m-0 pb-3 bg-2c3e50 text-white text-center fs-5">©2025 Yash Nagla. All rights reserved.</p>
+            <p className="m-0 py-3 bg-2c3e50 text-white text-center fs-5">©2025 Yash Nagla. All rights reserved.</p>
 
 
 
