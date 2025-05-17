@@ -6,7 +6,7 @@ import sevayatan from"../image/sevayatan.png";import sbcet from"../image/sbcet.p
 
 
 
-            <div className="container-fluid py-5 bg-f4f4f4"id="project">
+            <div className="container-fluid py-5 bg-f2f2f2"id="project">
 
 
 
