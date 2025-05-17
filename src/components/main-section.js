@@ -14,7 +14,7 @@ import profilePic from"../image/LinkedIn-DP.png";function Main(){return<>
 
 
 
-                        <div className="row g-3 g-lg-5">
+                        <div className="row gap-5 gap-lg-0">
 
 
 

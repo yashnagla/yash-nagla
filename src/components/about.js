@@ -1,4 +1,5 @@
-import aboutSectionImage from"../image/about-section-image.png";function About(){return<>
+// import aboutSectionImage from"../image/about-section-image.png";
+function About(){return<>
 
 
 
@@ -22,7 +23,7 @@ import aboutSectionImage from"../image/about-section-image.png";function About()
 
 
 
-                        <div className="col-12 col-lg-6">
+                        {/* <div className="col-12 col-lg-6">
 
 
 
@@ -30,11 +31,12 @@ import aboutSectionImage from"../image/about-section-image.png";function About()
 
 
 
-                        </div>
+                        </div> */}
 
 
 
-                        <div className="col-12 col-lg-6 d-flex align-items-center">
+                        {/* <div className="col-12 col-lg-6 d-flex align-items-center"> */}
+                        <div className="col-12 d-flex text-center">
 
 
 

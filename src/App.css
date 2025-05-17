@@ -67,13 +67,12 @@ body {
   height: 10px;
 }
 
-@media screen and (min-width : 992px) {
-  .h-100vh{
-    height: 100dvh;
-  }
-  .main-section{
-    height: 100%;
-  }
+.h-100vh{
+  height: 100dvh;
+}
+
+.main-section{
+  height: 100%;
 }
 
 .fs-10px{
