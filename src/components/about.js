@@ -1,4 +1,4 @@
-// import aboutSectionImage from"../image/about-section-image.png";
+import aboutSectionImage from"../image/about-section-image.svg";
 function About(){return<>
 
 
@@ -7,7 +7,7 @@ function About(){return<>
 
 
 
-            <div className="container-fluid py-5"id="about">
+            <div className="container-fluid"id="about">
 
 
 
@@ -23,7 +23,7 @@ function About(){return<>
 
 
 
-                        {/* <div className="col-12 col-lg-6">
+                        <div className="col-12 col-lg-6">
 
 
 
@@ -31,12 +31,12 @@ function About(){return<>
 
 
 
-                        </div> */}
+                        </div>
 
 
 
-                        {/* <div className="col-12 col-lg-6 d-flex align-items-center"> */}
-                        <div className="col-12 d-flex text-center">
+                        <div className="col-12 col-lg-6 d-flex align-items-center">
+                        {/* <div className="col-12 d-flex text-center"> */}
 
 
 
