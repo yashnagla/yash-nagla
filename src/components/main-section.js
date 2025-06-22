@@ -1,4 +1,8 @@
-import profilePic from"../image/LinkedIn-DP.png";function Main(){return<>
+import e from"../image/LinkedIn-DP.webp";function Main(){return<>
+
+
+
+
 
 
 
@@ -6,7 +10,15 @@ import profilePic from"../image/LinkedIn-DP.png";function Main(){return<>
 
 
 
+
+
+
+
                 <div className="container-fluid">
+
+
+
+
 
 
 
@@ -14,7 +26,15 @@ import profilePic from"../image/LinkedIn-DP.png";function Main(){return<>
 
 
 
+
+
+
+
                         <div className="row gap-5 gap-lg-0">
+
+
+
+
 
 
 
@@ -22,7 +42,15 @@ import profilePic from"../image/LinkedIn-DP.png";function Main(){return<>
 
 
 
+
+
+
+
                                 <h1 className="text-center text-lg-start display-4 fw-semibold text-2c3e50">Hi, I'm Yash Nagla</h1>
+
+
+
+
 
 
 
@@ -30,7 +58,15 @@ import profilePic from"../image/LinkedIn-DP.png";function Main(){return<>
 
 
 
+
+
+
+
                                 <h3 className="text-center text-lg-start text-333333 mb-4">Passionate about front-end development, creating responsive web applications.</h3>
+
+
+
+
 
 
 
@@ -38,7 +74,15 @@ import profilePic from"../image/LinkedIn-DP.png";function Main(){return<>
 
 
 
+
+
+
+
                                     <a className="text-decoration none"href="https://github.com/yashnagla"><button className="btn bg-2c3e50 px-lg-3 py-lg-2 fw-semibold text-white view-work-btn">View My Work</button></a>
+
+
+
+
 
 
 
@@ -46,11 +90,23 @@ import profilePic from"../image/LinkedIn-DP.png";function Main(){return<>
 
 
 
+
+
+
+
                                 </div>
 
 
 
+
+
+
+
                             </div>
+
+
+
+
 
 
 
@@ -58,7 +114,15 @@ import profilePic from"../image/LinkedIn-DP.png";function Main(){return<>
 
 
 
-                                <img src={profilePic}className="img-fluid rounded-circle maintain-images" alt="profilePic" loading="eager" />
+
+
+
+
+                                <img src={e}className="img-fluid rounded-circle maintain-images"rel="preload"alt="profilePic"loading="eager"/>
+
+
+
+
 
 
 
@@ -66,7 +130,15 @@ import profilePic from"../image/LinkedIn-DP.png";function Main(){return<>
 
 
 
+
+
+
+
                         </div>
+
+
+
+
 
 
 
@@ -74,11 +146,23 @@ import profilePic from"../image/LinkedIn-DP.png";function Main(){return<>
 
 
 
+
+
+
+
                 </div>
 
 
 
+
+
+
+
             </section>
+
+
+
+
 
 
 

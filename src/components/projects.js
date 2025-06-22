@@ -1,4 +1,4 @@
-import sevayatan from"../image/sevayatan.png";import sbcet from"../image/sbcet.png";function Projects(){return<>
+import sevayatan from"../image/sevayatan.webp";import sbcet from"../image/sbcet.webp";function Projects(){return<>
 
 
 
