@@ -35,7 +35,7 @@ import sevayatan from"../image/sevayatan.webp";import sbcet from"../image/sbcet.
 
 
                                 <div className="col-12 col-lg-6 bg-transparent border-0 mb-3 mb-lg-0">
-                                    <img src={sevayatan}className="img-fluid border rounded-3 maintain-images" alt="sevayatan"/>
+                                    <img src={sevayatan}className="img-fluid border rounded-3 maintain-images" alt="Yash Nagla Portfolio Screenshot"/>
                                 </div>
                                 <div className="col-12 col-lg-6 d-flex flex-column justify-content-center">
 
@@ -110,7 +110,7 @@ import sevayatan from"../image/sevayatan.webp";import sbcet from"../image/sbcet.
 
 
                                 <div className="col-12 col-lg-6 bg-transparent border-0 mb-3 mb-lg-0">
-                                    <img src={sbcet}className="img-fluid border rounded-3 maintain-images" alt="sevayatan"/>
+                                    <img src={sbcet}className="img-fluid border rounded-3 maintain-images" alt="Yash Nagla Portfolio Screenshot"/>
                                 </div>
                                 <div className="col-12 col-lg-6 d-flex flex-column justify-content-center">
 
