@@ -42,13 +42,6 @@ It is designed to be **responsive, fast, and visually appealing**, ensuring a sm
   <img src="/src/image/screenshots/expirence-education.png" width="600" alt="Homepage Screenshot">
   <img src="/src/image/screenshots/contact-footer.png" width="600" alt="Homepage Screenshot">
 </p>
-<!-- ![Homepage Screenshot](screenshots/main-section.png)
-![About Section Screenshot](screenshots/about.png)
-![Skills Section Screenshot](screenshots/skills.png)
-![Projects Section Screenshot](screenshots/projects.png)
-![Expirence And Education Section Screenshot](screenshots/expirence-education.png.png)
-![Contact Section Screenshot](screenshots/contact.png)
-![Footer Section Screenshot](screenshots/footer.png) -->
 
 ---
 
