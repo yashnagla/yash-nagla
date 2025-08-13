@@ -7,7 +7,7 @@ function About(){return<>
 
 
 
-            <div className="container-fluid"id="about">
+            <div className="container-fluid py-5 py-lg-0"id="about">
 
 
 
