@@ -34,14 +34,23 @@ It is designed to be **responsive, fast, and visually appealing**, ensuring a sm
 ---
 
 ## 🖼 Screenshots
-> *(Add your screenshots below)*  
-![Homepage Screenshot](screenshots/main-section.png)
+> *(Add your screenshots below)*
+<p align="center">
+  <img src="screenshots/main-section.png" width="600" alt="Homepage Screenshot">
+  <img src="screenshots/about.png" width="600" alt="Homepage Screenshot">
+  <img src="screenshots/skills.png" width="600" alt="Homepage Screenshot">
+  <img src="screenshots/projects.png" width="600" alt="Homepage Screenshot">
+  <img src="screenshots/expirence-education.png" width="600" alt="Homepage Screenshot">
+  <img src="screenshots/contact.png" width="600" alt="Homepage Screenshot">
+  <img src="screenshots/footer.png" width="600" alt="Homepage Screenshot">
+</p>
+<!-- ![Homepage Screenshot](screenshots/main-section.png)
 ![About Section Screenshot](screenshots/about.png)
 ![Skills Section Screenshot](screenshots/skills.png)
 ![Projects Section Screenshot](screenshots/projects.png)
 ![Expirence And Education Section Screenshot](screenshots/expirence-education.png.png)
 ![Contact Section Screenshot](screenshots/contact.png)
-![Footer Section Screenshot](screenshots/footer.png)
+![Footer Section Screenshot](screenshots/footer.png) -->
 
 ---
 
