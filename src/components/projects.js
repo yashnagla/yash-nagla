@@ -26,7 +26,7 @@ import sevayatan from"../image/sevayatan.webp";import sbcet from"../image/sbcet.
 
 
 
-                        <div className="">
+                        <div className="px-4 px-md-auto">
 
 
 
@@ -101,7 +101,7 @@ import sevayatan from"../image/sevayatan.webp";import sbcet from"../image/sbcet.
 
 
 
-                        <div className="">
+                        <div className="px-4 px-md-auto">
 
 
 

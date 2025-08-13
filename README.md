@@ -40,8 +40,7 @@ It is designed to be **responsive, fast, and visually appealing**, ensuring a sm
   <img src="/src/image/screenshots/skills.png" width="600" alt="Homepage Screenshot">
   <img src="/src/image/screenshots/projects.png" width="600" alt="Homepage Screenshot">
   <img src="/src/image/screenshots/expirence-education.png" width="600" alt="Homepage Screenshot">
-  <img src="/src/image/screenshots/contact.png" width="600" alt="Homepage Screenshot">
-  <img src="/src/image/screenshots/footer.png" width="600" alt="Homepage Screenshot">
+  <img src="/src/image/screenshots/contact-footer.png" width="600" alt="Homepage Screenshot">
 </p>
 <!-- ![Homepage Screenshot](screenshots/main-section.png)
 ![About Section Screenshot](screenshots/about.png)
