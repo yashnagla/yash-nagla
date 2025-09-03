@@ -9,7 +9,7 @@ import React from"react";import mail from"../image/icons/mail.svg";import phone 
 
 
 
-            <div className="container-fluid py-5 bg-f2f2f2"id="contact">
+            <div className="container-fluid py-5"id="contact">
 
 
 

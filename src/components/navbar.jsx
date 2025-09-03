@@ -6,7 +6,7 @@ function Navbar(){return<>
 
 
 
-        <div className="container-fluid bg-f2f2f2 position-fixed top-0 z-1 blur-navbar"id="top-section">
+        <div className="container-fluid position-fixed top-0 z-1 blur-navbar"id="top-section">
 
 
 

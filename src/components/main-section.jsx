@@ -78,7 +78,7 @@ import e from"../image/LinkedIn-DP.webp";function Main(){return<>
 
 
 
-                                    <a className="text-decoration none"href="https://github.com/yashnagla"><button className="btn bg-2c3e50 px-lg-3 py-lg-2 fw-semibold text-white view-work-btn">View My Work</button></a>
+                                    <a className="text-decoration none"href="https://github.com/yashnagla" target="_blank"><button className="btn bg-2c3e50 px-lg-3 py-lg-2 fw-semibold text-white view-work-btn">View My Work</button></a>
 
 
 
@@ -86,7 +86,7 @@ import e from"../image/LinkedIn-DP.webp";function Main(){return<>
 
 
 
-                                    <a className="text-decoration none text-black"href="pdf/Yash Nagla.pdf"><button className="btn bg-f4a261 px-lg-3 py-lg-2 fw-semibold download-resume-btn"><i className="fa-solid fa-download"></i> Download Resume</button></a>
+                                    <a className="text-decoration none text-black" href="pdf/Yash Nagla.pdf" download="Yash_Nagla_Resume.pdf"><button className="btn bg-f4a261 px-lg-3 py-lg-2 fw-semibold download-resume-btn"><i className="fa-solid fa-download"></i> Download Resume</button></a>
 
 
 
