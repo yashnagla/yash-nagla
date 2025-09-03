@@ -70,7 +70,7 @@ import e from"../image/LinkedIn-DP.webp";function Main(){return<>
 
 
 
-                                <div className="d-flex ustify-content-center justify-content-lg-start gap-3">
+                                <div className="d-flex justify-content-center justify-content-lg-start gap-3">
 
 
 
