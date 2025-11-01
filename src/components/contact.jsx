@@ -169,15 +169,15 @@ import React from"react";import mail from"../image/icons/mail.svg";import phone 
 
 
 
-                                <a href="https://github.com/yashnagla" aria-label="GitHub"><i className="fa-brands fa-github text-white bg-1e3e50 fs-3 bg-f9fafb p-2 rounded-circle"></i></a>
+                                <a href="https://github.com/yashnagla" aria-label="GitHub"><i className="fa-brands fa-github text-white bg-1e3e50 fs-3 p-2 rounded-circle"></i></a>
 
 
 
-                                <a href="https://www.linkedin.com/in/yash-sikhwal-nagla/" aria-label="LinkedIn"><i className="fa-brands fa-linkedin-in text-white bg-1e3e50 fs-3 bg-f9fafb p-2 rounded-circle"></i></a>
+                                <a href="https://www.linkedin.com/in/yash-sikhwal-nagla/" aria-label="LinkedIn"><i className="fa-brands fa-linkedin-in text-white bg-1e3e50 fs-3 p-2 rounded-circle"></i></a>
 
 
 
-                                <a href="https://www.instagram.com/yash.nagla" aria-label="Instagram"><i className="fa-brands fa-instagram text-white bg-1e3e50 fs-3 bg-f9fafb p-2 rounded-circle"></i></a>
+                                <a href="https://www.instagram.com/yash.nagla" aria-label="Instagram"><i className="fa-brands fa-instagram text-white bg-1e3e50 fs-3 p-2 rounded-circle"></i></a>
 
 
 

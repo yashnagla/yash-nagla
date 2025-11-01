@@ -6,7 +6,7 @@ function Education(){return<>
 
 
 
-            <div className="container-fluid bg-f9fafb py-5"id="education">
+            <div className="container-fluid py-5"id="education">
 
 
 

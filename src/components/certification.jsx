@@ -6,7 +6,7 @@ function Certification(){return<>
 
 
 
-            <div className="container-fluid py-5 bg-f9fafb"id="certification">
+            <div className="container-fluid py-5"id="certification">
 
 
 

@@ -30,7 +30,7 @@ import sevayatan from"../image/sevayatan.webp";import sbcet from"../image/sbcet.
 
 
 
-                            <div className="row p-3 shadow rounded-3">
+                            <div className="row p-3 shadow rounded-3 bg-white">
 
 
 
@@ -105,7 +105,7 @@ import sevayatan from"../image/sevayatan.webp";import sbcet from"../image/sbcet.
 
 
 
-                            <div className="row p-3 shadow rounded-3">
+                            <div className="row p-3 shadow rounded-3 bg-white">
 
 
 

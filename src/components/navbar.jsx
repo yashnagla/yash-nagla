@@ -18,11 +18,11 @@ function Navbar(){return<>
 
 
 
-                    <div className="container-fluid px-1 p-lg-0">
+                    <div className="container-fluid px-1 p-lg-0 fs-5">
 
 
 
-                        <span className="navbar-brand text-2c3e50 fw-medium fs-5">Yash Nagla</span>
+                        <span className="navbar-brand text-2c3e50 fw-medium fs-3">Yash Nagla</span>
 
 
 

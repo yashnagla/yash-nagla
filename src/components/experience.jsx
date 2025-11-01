@@ -6,7 +6,7 @@ function Experience(){return<>
 
 
 
-            <div className="container-fluid py-5 bg-f9fafb"id="experience">
+            <div className="container-fluid py-5"id="experience">
 
 
 

@@ -6,7 +6,7 @@ import frontend from"../image/icons/frontend.svg";import git from"../image/icons
 
 
 
-            <div className="container-fluid py-5 bg-f9fafb"id="skills">
+            <div className="container-fluid py-5"id="skills">
 
 
 
