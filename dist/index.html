@@ -10,7 +10,11 @@
     <meta name="google-site-verification" content="F6mmfxLf7APrTh2h6TSNHRL6zpLp0ULtnMgxwKqV3MI" />
 
     <!-- Boostrap CSS -->
-    <link href="./dependencies/bootstrap.min.css" rel="stylesheet">
+    <link rel="preload" href="/dependencies/bootstrap.min.css" as="style" onload="this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="/dependencies/bootstrap.min.css"></noscript>
+
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" media="print" onload="this.media='all'">
     
     <script type="module" crossorigin src="/assets/index-oLvitpF8.js"></script>
     <link rel="stylesheet" crossorigin href="/assets/index-Z4N8TbwI.css">
@@ -20,9 +24,9 @@
     <div id="root"></div>
     
     <!-- Boostrap JS -->
-    <script src="./dependencies/bootstrap.bundle.min.js"></script>
+    <script src="./dependencies/bootstrap.bundle.min.js" defer></script>
     <!-- FontAwesome -->
-    <script src="./dependencies/font-awesome.js" crossorigin="anonymous"></script>
+    <!-- <script src="./dependencies/font-awesome.js" crossorigin="anonymous" defer></script> -->
 
 
   </body>

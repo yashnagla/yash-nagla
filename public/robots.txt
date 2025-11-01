@@ -1,2 +1,7 @@
 User-agent: *
-Disallow: /
+Disallow: /admin/
+Disallow: /server/
+Disallow: /api/
+Allow: /
+
+Sitemap: https://yash-nagla.netlify.app/sitemap.xml

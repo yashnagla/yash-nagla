@@ -3,37 +3,44 @@
 
   <url>
     <loc>https://yash-nagla.netlify.app/#main-section</loc>
+    <lastmod>2025-11-01</lastmod>
     <priority>1.0</priority>
   </url>
 
-  <url>
+  <!-- <url>
     <loc>https://yash-nagla.netlify.app/#about</loc>
+    <lastmod>2025-11-01</lastmod>
     <priority>0.8</priority>
   </url>
 
   <url>
     <loc>https://yash-nagla.netlify.app/#skills</loc>
+    <lastmod>2025-11-01</lastmod>
     <priority>0.8</priority>
   </url>
 
   <url>
     <loc>https://yash-nagla.netlify.app/#project</loc>
+    <lastmod>2025-11-01</lastmod>
     <priority>0.8</priority>
   </url>
 
   <url>
     <loc>https://yash-nagla.netlify.app/#experience</loc>
+    <lastmod>2025-11-01</lastmod>
     <priority>0.8</priority>
   </url>
 
   <url>
-    <loc>https://yash-nagla.netlify.app/education</loc>
+    <loc>https://yash-nagla.netlify.app/#education</loc>
+    <lastmod>2025-11-01</lastmod>
     <priority>0.8</priority>
   </url>
 
   <url>
-    <loc>https://yash-nagla.netlify.app/contact</loc>
+    <loc>https://yash-nagla.netlify.app/#contact</loc>
+    <lastmod>2025-11-01</lastmod>
     <priority>0.8</priority>
-  </url>
+  </url> -->
 
 </urlset>

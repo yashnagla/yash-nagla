@@ -5,10 +5,10 @@
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white"/>
-  <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white"/>
-  <img src="https://img.shields.io/badge/Bootstrap-7952B3?style=for-the-badge&logo=bootstrap&logoColor=white"/>
-  <img src="https://img.shields.io/badge/ReactJS-61DAFB?style=for-the-badge&logo=react&logoColor=black"/>
+  <img loading="lazy" src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white"/>
+  <img loading="lazy" src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white"/>
+  <img loading="lazy" src="https://img.shields.io/badge/Bootstrap-7952B3?style=for-the-badge&logo=bootstrap&logoColor=white"/>
+  <img loading="lazy" src="https://img.shields.io/badge/ReactJS-61DAFB?style=for-the-badge&logo=react&logoColor=black"/>
 </p>
 
 ---
@@ -35,12 +35,12 @@ It is designed to be **responsive, fast, and visually appealing**, ensuring a sm
 
 ## 🖼 Screenshots
 <p align="center">
-  <img src="/src/image/screenshots/main-section.png" width="600" alt="Homepage Screenshot">
-  <img src="/src/image/screenshots/about.png" width="600" alt="Homepage Screenshot">
-  <img src="/src/image/screenshots/skills.png" width="600" alt="Homepage Screenshot">
-  <img src="/src/image/screenshots/projects.png" width="600" alt="Homepage Screenshot">
-  <img src="/src/image/screenshots/expirence-education.png" width="600" alt="Homepage Screenshot">
-  <img src="/src/image/screenshots/contact-footer.png" width="600" alt="Homepage Screenshot">
+  <img loading="lazy" src="/src/image/screenshots/main-section.png" width="600" alt="Homepage Screenshot">
+  <img loading="lazy" src="/src/image/screenshots/about.png" width="600" alt="Homepage Screenshot">
+  <img loading="lazy" src="/src/image/screenshots/skills.png" width="600" alt="Homepage Screenshot">
+  <img loading="lazy" src="/src/image/screenshots/projects.png" width="600" alt="Homepage Screenshot">
+  <img loading="lazy" src="/src/image/screenshots/expirence-education.png" width="600" alt="Homepage Screenshot">
+  <img loading="lazy" src="/src/image/screenshots/contact-footer.png" width="600" alt="Homepage Screenshot">
 </p>
 
 ---

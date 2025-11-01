@@ -1,85 +1,66 @@
-function Footer(){return<>
+function Footer() {
+  const socialLinks = [
+    {
+      href: "https://github.com/yashnagla",
+      label: "GitHub",
+      icon: "fa-brands fa-github",
+    },
+    {
+      href: "https://www.linkedin.com/in/yash-sikhwal-nagla/",
+      label: "LinkedIn",
+      icon: "fa-brands fa-linkedin-in",
+    },
+    {
+      href: "https://www.instagram.com/yash.nagla",
+      label: "Instagram",
+      icon: "fa-brands fa-instagram",
+    },
+  ];
 
-
-
-            {}
-
-
-
-            <div className="container-fluid py-5 bg-2c3e50">
-
-
-
-                <div className="container p-0">
-
-
-
-                    <div className="d-flex justify-content-between flex-column flex-md-row g-3 text-white text-center text-md-start">
-
-
-
-                        <div className="py-3 py-lg-0">
-
-
-
-                            <h2 className="fw-semibold">Yash Nagla</h2>
-
-
-
-                            <h3>Associate Software Developer</h3>
-
-
-
-                        </div>
-
-
-
-                        <div >
-
-
-
-                            <h3 className="fw-semibold">Get in Touch</h3>
-
-
-
-                            <div className="social-icons d-flex gap-3 justify-content-center">
-
-
-
-                                <a href="https://github.com/yashnagla" aria-label="GitHub"><i className="fa-brands fa-github text-white bg-1e3e50 fs-3 p-2 rounded-circle"></i></a>
-
-
-
-                                <a href="https://www.linkedin.com/in/yash-sikhwal-nagla/" aria-label="LinkedIn"><i className="fa-brands fa-linkedin-in text-white bg-1e3e50 fs-3 p-2 rounded-circle"></i></a>
-
-
-
-                                <a href="https://www.instagram.com/yash.nagla" aria-label="Instagram"><i className="fa-brands fa-instagram text-white bg-1e3e50 fs-3 p-2 rounded-circle"></i></a>
-
-
-
-                            </div>
-
-
-
-                        </div>
-
-
-
-                    </div>
-
-
-
-                </div>
-
-
-
+  return (
+    <footer className="bg-2c3e50 text-white">
+      {/* Main Footer Section */}
+      <div className="container-fluid py-5">
+        <div className="container p-0">
+          <div className="d-flex flex-column flex-md-row justify-content-between align-items-center text-center text-md-start gap-4">
+            {/* Left Section */}
+            <div>
+              <h2 className="fw-semibold m-0">Yash Nagla</h2>
+              <h3 className="fs-5 text-light m-0">Associate Software Developer</h3>
             </div>
 
+            {/* Contact / Social Section */}
+            <div>
+              <h3 className="fw-semibold mb-3">Get in Touch</h3>
+              <div className="d-flex justify-content-center justify-content-md-start gap-3">
+                {socialLinks.map((link, index) => (
+                  <a
+                    key={index}
+                    href={link.href}
+                    aria-label={link.label}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-white"
+                  >
+                    <i
+                      className={`${link.icon} fs-3 p-2 rounded-circle bg-1e3e50 hover-opacity`}
+                    ></i>
+                  </a>
+                ))}
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
 
+      {/* Bottom Copyright */}
+      <div className="py-3 border-top border-secondary text-center fs-6">
+        <p className="m-0">
+          © {new Date().getFullYear()} <strong>Yash Nagla</strong>. All rights reserved.
+        </p>
+      </div>
+    </footer>
+  );
+}
 
-            <p className="m-0 py-3 bg-2c3e50 text-white text-center fs-5">©2025 Yash Nagla. All rights reserved.</p>
-
-
-
-        </>}export default Footer;
+export default Footer;
