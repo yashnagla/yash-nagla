@@ -1,33 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Yash Nagla | Front-End Developer</title>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="Portfolio of Yash Nagla, a Front-End ReactJS Developer specializing in modern web apps." />
+    <!-- Basic Meta Tags -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Yash Nagla | Front-End Developer & ReactJS Specialist</title>
+    <meta name="description" content="Portfolio of Yash Nagla, a Front-End ReactJS Developer specializing in building modern, responsive, and performance-driven web applications using ReactJS, JavaScript, and Tailwind CSS." />
     <meta name="robots" content="index, follow" />
-    <meta name="keywords" content="Yash Nagla, Frontend Developer, ReactJS, Web Portfolio, JavaScript Developer" />
-    <meta name="google-site-verification" content="F6mmfxLf7APrTh2h6TSNHRL6zpLp0ULtnMgxwKqV3MI" />
+    <meta name="keywords" content="Yash Nagla, Frontend Developer, ReactJS, JavaScript, Web Developer, Portfolio, Tailwind, Bootstrap, UI UX" />
+    <link rel="canonical" href="https://yash-nagla.netlify.app/" />
 
-    <!-- Boostrap CSS -->
-    <link rel="preload" href="/dependencies/bootstrap.min.css" as="style" onload="this.rel='stylesheet'">
-    <noscript><link rel="stylesheet" href="/dependencies/bootstrap.min.css"></noscript>
+    <!-- Structured Data (JSON-LD Schema for SEO) -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org/",
+        "@type": "Person",
+        "name": "Yash Nagla",
+        "url": "https://yash-nagla.netlify.app/",
+        "image": "https://yash-nagla.netlify.app/profile.jpg",
+        "jobTitle": "Front-End Developer",
+        "worksFor": {
+          "@type": "Organization",
+          "name": "Mount Saffron"
+        },
+        "alumniOf": "Poornima College of Engineering",
+        "sameAs": [
+          "https://www.linkedin.com/in/yashnagla/",
+          "https://github.com/yashnagla"
+        ],
+        "knowsAbout": [
+          "ReactJS",
+          "JavaScript",
+          "HTML",
+          "CSS",
+          "Tailwind",
+          "Bootstrap"
+        ],
+        "description": "Front-End ReactJS Developer building modern, performance-driven, and user-centric web applications."
+      }
+    </script>
 
-    <!-- FontAwesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" media="print" onload="this.media='all'">
-    
-    <script type="module" crossorigin src="/assets/index-oLvitpF8.js"></script>
-    <link rel="stylesheet" crossorigin href="/assets/index-Z4N8TbwI.css">
+    <!-- Preconnect & DNS Prefetch for Fonts -->
+    <link rel="dns-prefetch" href="https://fonts.gstatic.com" />
+    <link rel="dns-prefetch" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <!-- Google Fonts (asynchronous load) -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;900&display=swap" rel="stylesheet" media="print" onload="this.media='all'" />
+
+    <!-- Open Graph (Social Sharing) -->
+    <meta property="og:title" content="Yash Nagla | Front-End ReactJS Developer" />
+    <meta property="og:description" content="Explore my portfolio — modern, responsive web applications built using ReactJS, JavaScript, and Tailwind CSS." />
+    <meta property="og:image" content="https://yash-nagla.netlify.app/og-image.jpg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:url" content="https://yash-nagla.netlify.app/" />
+    <meta property="og:type" content="website" />
+
+    <!-- Twitter Cards -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Yash Nagla | Front-End ReactJS Developer" />
+    <meta name="twitter:description" content="Modern, responsive web apps built using ReactJS, JavaScript, and Tailwind CSS." />
+    <meta name="twitter:image" content="https://yash-nagla.netlify.app/thumbnail.jpg" />
+
+    <link rel="icon" href="/favicon.ico" />
+
+    <!-- Preload Critical CSS (non-blocking Bootstrap) -->
+    <link rel="preload" href="/dependencies/bootstrap.min.css" as="style" onload="this.rel='stylesheet'" />
+    <noscript><link rel="stylesheet" href="/dependencies/bootstrap.min.css" /></noscript>
+
+    <!-- Preload Key JS (non-blocking) -->
+    <link rel="preload" href="/dependencies/bootstrap.bundle.min.js" as="script" />
+
+    <!-- Font Awesome (CSS-only, async) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" media="print" onload="this.media='all'" />
+    <script type="module" crossorigin src="/assets/index-DtM_WkaJ.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-vMWpQnmj.css">
   </head>
-  <body>
-    
+
+  <body class="bg-f9fafb">
     <div id="root"></div>
-    
-    <!-- Boostrap JS -->
-    <script src="./dependencies/bootstrap.bundle.min.js" defer></script>
-    <!-- FontAwesome -->
-    <!-- <script src="./dependencies/font-awesome.js" crossorigin="anonymous" defer></script> -->
 
+    <!-- Deferred JS (Bootstrap Bundle) -->
+    <script defer src="/dependencies/bootstrap.bundle.min.js"></script>
 
+    <!-- React Entry Point -->
   </body>
 </html>

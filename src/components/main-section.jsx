@@ -57,7 +57,7 @@ function Main() {
                 src={profileImg}
                 className="img-fluid maintain-images"
                 alt="Yash Nagla Front-End Developer"
-                loading="eager"
+                loading="lazy"
                 decoding="async"
               />
             </div>
