@@ -6,12 +6,12 @@ import sql from "../image/icons/sql.svg";
 function Skills() {
   const frontendSkills = [
     { name: "HTML5 & CSS3", level: "94%" },
-    { name: "JavaScript (ES6+)", level: "85%" },
-    { name: "ReactJS", level: "80%" },
-    { name: "Redux", level: "70%" },
+    { name: "JavaScript (ES6+)", level: "70%" },
     { name: "Bootstrap", level: "90%" },
     { name: "Tailwind CSS", level: "80%" },
-    { name: "Material UI", level: "75%" },
+    { name: "ReactJS", level: "50%" },
+    // { name: "Redux", level: "50%" },
+    { name: "Material UI", level: "55%" },
     { name: "UI/UX Design", level: "75%" },
     { name: "REST API Integration", level: "70%" },
     { name: "Web Performance Optimization", level: "65%" },
@@ -25,7 +25,7 @@ function Skills() {
   const otherSkills = [
     { name: "Git & GitHub", icon: git },
     { name: "Responsive Design", icon: responsiveDesign },
-    { name: "Database Management (MySQL)", icon: sql },
+    // { name: "Database Management (MySQL)", icon: sql },
   ];
 
   return (
