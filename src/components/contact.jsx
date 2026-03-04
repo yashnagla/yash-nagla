@@ -1,9 +1,50 @@
+import { useEffect, useRef } from "react";
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { motion } from "framer-motion";
+
 import React from "react";
 import mail from "../image/icons/mail.svg";
 import phone from "../image/icons/call.svg";
 import location from "../image/icons/location.svg";
 
 function Contact() {
+  const contactRef = useRef(null);
+
+  useEffect(() => {
+    gsap.registerPlugin(ScrollTrigger);
+
+    const ctx = gsap.context(() => {
+      // Contact info stagger
+      gsap.from(".contact-item", {
+        x: -40,
+        opacity: 0,
+        duration: 0.8,
+        stagger: 0.15,
+        ease: "power3.out",
+        scrollTrigger: {
+          trigger: ".contact-section",
+          start: "top 75%",
+          toggleActions: "play none none none",
+        },
+      });
+
+      // Form animation
+      gsap.from(".contact-form", {
+        y: 60,
+        opacity: 0,
+        duration: 1,
+        ease: "power3.out",
+        scrollTrigger: {
+          trigger: ".contact-section",
+          start: "top 75%",
+        },
+      });
+    }, contactRef);
+
+    return () => ctx.revert();
+  }, []);
+
   const contactDetails = {
     email: "naglayash@gmail.com",
     phone: "+91 76590812357",
@@ -11,9 +52,21 @@ function Contact() {
   };
 
   const socialLinks = [
-    { href: "https://github.com/yashnagla", icon: "fa-github", label: "GitHub" },
-    { href: "https://www.linkedin.com/in/yash-sikhwal-nagla/", icon: "fa-linkedin-in", label: "LinkedIn" },
-    { href: "https://www.instagram.com/yash.nagla", icon: "fa-instagram", label: "Instagram" },
+    {
+      href: "https://github.com/yashnagla",
+      icon: "fa-github",
+      label: "GitHub",
+    },
+    {
+      href: "https://www.linkedin.com/in/yash-sikhwal-nagla/",
+      icon: "fa-linkedin-in",
+      label: "LinkedIn",
+    },
+    {
+      href: "https://www.instagram.com/yash.nagla",
+      icon: "fa-instagram",
+      label: "Instagram",
+    },
   ];
 
   const contactItems = [
@@ -40,14 +93,22 @@ function Contact() {
   ];
 
   return (
-    <section className="contact-section py-5 bg-light" id="contact">
+    <section
+      ref={contactRef}
+      className="contact-section py-5 bg-light"
+      id="contact"
+    >
       <div className="container">
-        <h2 className="text-center text-2c3e50 fw-semibold mb-5">Get In Touch</h2>
+        <h2 className="text-center text-2c3e50 fw-semibold mb-5">
+          Get In Touch
+        </h2>
 
         <div className="row g-4">
           {/* Contact Info Section */}
           <div className="col-12 col-lg-4">
-            <h3 className="text-2c3e50 fw-semibold mb-4">Contact Information</h3>
+            <h3 className="text-2c3e50 fw-semibold mb-4">
+              Contact Information
+            </h3>
 
             {contactItems.map((item, index) => (
               <a
@@ -56,8 +117,14 @@ function Contact() {
                 className="text-decoration-none"
                 aria-label={item.title}
               >
-                <div className="d-flex align-items-center gap-3 mb-3">
-                  <img loading="lazy" src={item.icon} alt={item.alt} width="28" height="28" />
+                <div className="d-flex align-items-center gap-3 mb-3 contact-item">
+                  <img
+                    loading="lazy"
+                    src={item.icon}
+                    alt={item.alt}
+                    width="28"
+                    height="28"
+                  />
                   <div>
                     <p className="m-0 fw-semibold text-2c3e50">{item.title}</p>
                     <p className="m-0 text-2c3e50">{item.value}</p>
@@ -76,9 +143,11 @@ function Contact() {
                   rel="noopener noreferrer"
                   aria-label={social.label}
                 >
-                  <i
+                  <motion.i
+                    whileHover={{ scale: 1.2, rotate: 8 }}
+                    transition={{ type: "spring", stiffness: 300 }}
                     className={`fa-brands ${social.icon} text-white bg-1e3e50 fs-3 p-2 rounded-circle`}
-                  ></i>
+                  />
                 </a>
               ))}
             </div>
@@ -87,7 +156,7 @@ function Contact() {
           {/* Contact Form Section */}
           <div className="col-12 col-lg-8">
             <form
-              className="bg-white rounded-3 p-4 shadow-sm"
+              className="bg-white rounded-3 p-4 shadow-sm contact-form"
               aria-label="Contact form"
               onSubmit={(e) => e.preventDefault()}
             >
@@ -127,9 +196,15 @@ function Contact() {
                 ></textarea>
               </div>
 
-              <button type="submit" className="btn bg-2c3e50 text-white fw-semibold">
+              <motion.button
+                type="submit"
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.99 }}
+                transition={{ type: "spring", stiffness: 300 }}
+                className="btn bg-2c3e50 text-white fw-semibold"
+              >
                 Submit
-              </button>
+              </motion.button>
             </form>
           </div>
         </div>

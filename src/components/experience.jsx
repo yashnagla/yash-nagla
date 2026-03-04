@@ -1,4 +1,45 @@
+import { useEffect, useRef } from "react";
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { motion } from "framer-motion";
+
 function Experience() {
+  const experienceRef = useRef(null);
+
+  useEffect(() => {
+    gsap.registerPlugin(ScrollTrigger);
+
+    const ctx = gsap.context(() => {
+      // Animate experience cards
+      gsap.from(".experience-card", {
+        y: 80,
+        opacity: 0,
+        duration: 1,
+        stagger: 0.3,
+        ease: "power3.out",
+        scrollTrigger: {
+          trigger: ".experience-section",
+          start: "top 75%",
+          toggleActions: "play none none none",
+        },
+      });
+
+      // Animate bullet points
+      gsap.from(".experience-card li", {
+        x: -20,
+        opacity: 0,
+        duration: 0.6,
+        stagger: 0.1,
+        scrollTrigger: {
+          trigger: ".experience-section",
+          start: "top 70%",
+        },
+      });
+    }, experienceRef);
+
+    return () => ctx.revert();
+  }, []);
+
   const experienceData = [
     {
       title: "Associate Software Developer",
@@ -25,15 +66,21 @@ function Experience() {
   ];
 
   return (
-    <section className="experience-section py-5 bg-light" id="experience">
+    <section
+      ref={experienceRef}
+      className="experience-section py-5 bg-light"
+      id="experience"
+    >
       <div className="container">
         <h2 className="text-center text-2c3e50 fw-semibold mb-5">Experience</h2>
 
         <div className="row g-4">
           {experienceData.map((exp, index) => (
             <div className="col-12 col-lg-6" key={index}>
-              <div
-                className="border-left-4caf50 rounded-4 p-4 bg-white shadow-sm h-100"
+              <motion.div
+                whileHover={{ y: -6 }}
+                transition={{ type: "spring", stiffness: 200 }}
+                className="border-left-4caf50 rounded-4 p-4 bg-white shadow-sm h-100 experience-card"
                 aria-label={`${exp.title} at ${exp.company}`}
               >
                 <h3 className="fw-semibold text-2c3e50 mb-1">{exp.title}</h3>
@@ -50,7 +97,7 @@ function Experience() {
                     <li key={i}>{task}</li>
                   ))}
                 </ul>
-              </div>
+              </motion.div>
             </div>
           ))}
         </div>

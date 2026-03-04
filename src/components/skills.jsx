@@ -1,9 +1,52 @@
+import { useEffect, useRef } from "react";
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+
 import frontend from "../image/icons/frontend.svg";
 import git from "../image/icons/git-github.svg";
 import responsiveDesign from "../image/icons/responsive-design.svg";
 import sql from "../image/icons/sql.svg";
 
 function Skills() {
+  const skillsRef = useRef(null);
+
+  useEffect(() => {
+    gsap.registerPlugin(ScrollTrigger);
+
+    const ctx = gsap.context(() => {
+      // Animate progress bars
+      gsap.fromTo(
+        ".progress-bar",
+        { width: 0 },
+        {
+          width: (i, el) => el.getAttribute("data-level"),
+          duration: 1.5,
+          ease: "power3.out",
+          stagger: 0.1,
+          scrollTrigger: {
+            trigger: ".skills-animate",
+            start: "top 75%",
+            toggleActions: "play none none none",
+          },
+        },
+      );
+
+      // Fade in cards
+      gsap.from(".skills-card", {
+        y: 60,
+        opacity: 0,
+        duration: 1,
+        stagger: 0.2,
+        scrollTrigger: {
+          trigger: ".skills-animate",
+          start: "top 80%",
+        },
+      });
+    }, skillsRef);
+
+    return () => ctx.revert();
+  }, []);
+
   const frontendSkills = [
     { name: "HTML5 & CSS3", level: "94%" },
     { name: "JavaScript (ES6+)", level: "70%" },
@@ -29,7 +72,7 @@ function Skills() {
   ];
 
   return (
-    <section className="container-fluid py-5" id="skills">
+    <section ref={skillsRef} className="container-fluid py-5 skills-animate" id="skills">
       <div className="container p-0">
         {/* Section Heading */}
         <h2 className="text-center text-2c3e50 fw-semibold mb-4">Skills</h2>
@@ -37,9 +80,14 @@ function Skills() {
         <div className="row justify-content-center mb-5">
           {/* Frontend Skills */}
           <div className="col-12 col-md-6 mb-4">
-            <div className="card p-3 shadow h-100">
+            <div className="card p-3 shadow h-100 skills-card">
               <div className="card-header bg-transparent border-0 d-flex align-items-center gap-3">
-                <img loading="lazy" src={frontend} className="img-fluid" alt="Frontend Icon" />
+                <img
+                  loading="lazy"
+                  src={frontend}
+                  className="img-fluid"
+                  alt="Frontend Icon"
+                />
                 <h3 className="fs-5 fw-semibold text-2c3e50 m-0">Frontend</h3>
               </div>
               <div className="card-body">
@@ -59,7 +107,7 @@ function Skills() {
                     >
                       <div
                         className="progress-bar bg-4caf50"
-                        style={{ width: skill.level }}
+                        data-level={skill.level}
                       ></div>
                     </div>
                   </div>
@@ -70,9 +118,14 @@ function Skills() {
 
           {/* Backend Skills */}
           <div className="col-12 col-md-6 mb-4">
-            <div className="card p-3 shadow h-100">
+            <div className="card p-3 shadow h-100 skills-card">
               <div className="card-header bg-transparent border-0 d-flex align-items-center gap-3">
-                <img loading="lazy" src={frontend} className="img-fluid" alt="Backend Icon" />
+                <img
+                  loading="lazy"
+                  src={frontend}
+                  className="img-fluid"
+                  alt="Backend Icon"
+                />
                 <h3 className="fs-5 fw-semibold text-2c3e50 m-0">Backend</h3>
               </div>
               <div className="card-body">
@@ -92,7 +145,7 @@ function Skills() {
                     >
                       <div
                         className="progress-bar bg-4caf50"
-                        style={{ width: skill.level }}
+                        data-level={skill.level}
                       ></div>
                     </div>
                   </div>
@@ -109,7 +162,7 @@ function Skills() {
         <div className="row g-3 justify-content-center">
           {otherSkills.map((item, index) => (
             <div className="col-12 col-sm-4" key={index}>
-              <div className="card p-3 shadow h-100">
+              <div className="card p-3 shadow h-100 skills-card">
                 <div className="card-header bg-transparent border-0 d-flex justify-content-center">
                   <img
                     src={item.icon}

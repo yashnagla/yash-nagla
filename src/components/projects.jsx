@@ -1,7 +1,48 @@
+import { useEffect, useRef } from "react";
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { motion } from "framer-motion";
+
 import sevayatan from "../image/sevayatan.webp";
 import sbcet from "../image/sbcet.webp";
 
 function Projects() {
+  const projectsRef = useRef(null);
+
+  useEffect(() => {
+    gsap.registerPlugin(ScrollTrigger);
+
+    const ctx = gsap.context(() => {
+      // Reveal each project block
+      gsap.from(".project-card", {
+        y: 80,
+        opacity: 0,
+        duration: 1,
+        stagger: 0.3,
+        ease: "power3.out",
+        scrollTrigger: {
+          trigger: ".projects-section",
+          start: "top 75%",
+          toggleActions: "play none none none",
+        },
+      });
+
+      // Image slide-in effect
+      gsap.from(".project-image", {
+        x: -60,
+        opacity: 0,
+        duration: 1,
+        stagger: 0.3,
+        scrollTrigger: {
+          trigger: ".projects-section",
+          start: "top 75%",
+        },
+      });
+    }, projectsRef);
+
+    return () => ctx.revert();
+  }, []);
+
   const projectData = [
     {
       title: "Sevayatan Hospital",
@@ -27,22 +68,35 @@ function Projects() {
   ];
 
   return (
-    <section className="container-fluid py-5" id="project">
+    <section
+      ref={projectsRef}
+      className="container-fluid py-5 projects-section"
+      id="project"
+    >
       <div className="container p-0">
         <h2 className="text-center text-2c3e50 fw-semibold mb-4">Projects</h2>
 
         <div className="row g-4">
           {projectData.map((project, index) => (
             <div className="col-12" key={index}>
-              <div className="row p-3 shadow rounded-3 bg-white">
+              <motion.div
+                whileHover={{ y: -6 }}
+                transition={{ type: "spring", stiffness: 200 }}
+                className="row p-3 shadow rounded-3 bg-white project-card"
+              >
                 {/* Project Image */}
-                <div className="col-12 col-lg-6 mb-3 mb-lg-0">
+                <motion.div
+                  className="col-12 col-lg-6 mb-3 mb-lg-0 project-image"
+                  whileHover={{ rotateY: 6, rotateX: 4, scale: 1.02 }}
+                  transition={{ type: "spring", stiffness: 150 }}
+                  style={{ transformStyle: "preserve-3d" }}
+                >
                   <img
                     src={project.image}
                     className="img-fluid rounded-3 maintain-images"
                     alt={project.alt}
                   />
-                </div>
+                </motion.div>
 
                 {/* Project Details */}
                 <div className="col-12 col-lg-6 d-flex flex-column justify-content-center">
@@ -65,16 +119,18 @@ function Projects() {
                     style={{ scrollbarWidth: "none" }}
                   >
                     {project.technologies.map((tech, i) => (
-                      <span
+                      <motion.span
                         key={i}
+                        whileHover={{ scale: 1.1 }}
+                        transition={{ type: "spring", stiffness: 300 }}
                         className="badge bg-edf7ed text-3b6b26 rounded-pill fw-medium fs-14px px-3 py-2"
                       >
                         {tech}
-                      </span>
+                      </motion.span>
                     ))}
                   </div>
                 </div>
-              </div>
+              </motion.div>
             </div>
           ))}
         </div>
