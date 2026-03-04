@@ -75,7 +75,7 @@ function Footer() {
                     <motion.i
                       whileHover={{ scale: 1.2, rotate: 10 }}
                       transition={{ type: "spring", stiffness: 300 }}
-                      className={`${link.icon} fs-3 p-2 rounded-circle bg-1e3e50`}
+                      className={`${link.icon} fs-2 p-2 rounded-circle`}
                     />
                   </a>
                 ))}
@@ -88,7 +88,7 @@ function Footer() {
       {/* Bottom Copyright */}
       <div className="py-3 border-top border-secondary text-center fs-6 footer-animate">
         <p className="m-0">
-          © {new Date().getFullYear()} <strong>Yash Nagla</strong>. All rights
+          &copy; {new Date().getFullYear()} <strong>Yash Nagla</strong>. All rights
           reserved.
         </p>
       </div>
