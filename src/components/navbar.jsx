@@ -6,6 +6,7 @@ import { motion } from "framer-motion";
 function Navbar() {
   const navbarRef = useRef(null);
   const [active, setActive] = useState("#main-section");
+  const [darkMode, setDarkMode] = useState(false);
 
   useEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
@@ -78,6 +79,24 @@ function Navbar() {
     { label: "Contact", href: "#contact" },
   ];
 
+  const socialLinks = [
+    {
+      href: "https://github.com/yashnagla",
+      label: "GitHub",
+      icon: "fa-brands fa-github",
+    },
+    {
+      href: "https://www.linkedin.com/in/yash-sikhwal-nagla/",
+      label: "LinkedIn",
+      icon: "fa-brands fa-linkedin-in",
+    },
+    {
+      href: "https://www.instagram.com/yash.nagla",
+      label: "Instagram",
+      icon: "fa-brands fa-instagram",
+    },
+  ];
+
   return (
     <header
       ref={navbarRef}
@@ -85,61 +104,83 @@ function Navbar() {
       id="top-section"
     >
       <div className="container p-0">
-        <nav className="navbar navbar-expand-lg" id="navBar">
-          <div className="container-fluid px-1 p-lg-0 fs-5">
-            {/* Brand */}
-            <a
-              href="#main-section"
-              className="navbar-brand text-2c3e50 fw-medium fs-3 nav-animate"
-              aria-label="Yash Nagla Portfolio Home"
-            >
-              Yash Nagla
-            </a>
+        <nav className="navbar navbar-expand-lg w-100" id="navBar">
+          <div className="d-flex justify-content-between w-100">
+            <div className="container-fluid d-flex justify-content-between align-items-center px-1 p-lg-0 fs-5">
+              {/* Brand */}
+              <a
+                href="#main-section"
+                className="navbar-brand text-2c3e50 fw-medium fs-3 nav-animate"
+                aria-label="Yash Nagla Portfolio Home"
+              >
+                Yash Nagla
+              </a>
 
-            {/* Mobile toggle button */}
-            <button
-              className="navbar-toggler border-0"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#navbarSupportedContent"
-              aria-controls="navbarSupportedContent"
-              aria-expanded="false"
-              aria-label="Toggle navigation"
-            >
-              <span className="navbar-toggler-icon"></span>
-            </button>
+              {/* Mobile toggle button */}
+              {/* <button
+                className="navbar-toggler border-0"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <span className="navbar-toggler-icon"></span>
+              </button> */}
 
-            {/* Navigation links */}
-            <div
-              className="collapse navbar-collapse justify-content-end"
-              id="navbarSupportedContent"
-            >
-              <ul className="navbar-nav nav-animate">
-                {navLinks.map((link, index) => (
-                  <li className="nav-item" key={index}>
-                    <motion.a
-                      whileHover={{ y: -2 }}
+              {/* Social links */}
+              <div className="d-flex justify-content-center justify-content-md-start gap-3">
+                {socialLinks.map((link, index) => (
+                  <a
+                    key={index}
+                    href={link.href}
+                    aria-label={link.label}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-white"
+                  >
+                    <motion.i
+                      whileHover={{ scale: 1.2, rotate: 10 }}
                       transition={{ type: "spring", stiffness: 300 }}
-                      className={`nav-link fw-medium ${
-                        active === link.href ? "active-link" : "text-2c3e50"
-                      }`}
-                      href={link.href}
-                    >
-                      {link.label}
-                    </motion.a>
-                  </li>
+                      className={`${link.icon} ${darkMode ? "text-black" : "text-white"} theme-icon fs-2`}
+                    />
+                  </a>
                 ))}
-              </ul>
+              </div>
+              {/* Navigation links */}
+              {/* <div
+                className="collapse navbar-collapse justify-content-end"
+                id="navbarSupportedContent"
+              >
+                <ul className="navbar-nav nav-animate">
+                  {navLinks.map((link, index) => (
+                    <li className="nav-item" key={index}>
+                      <motion.a
+                        whileHover={{ y: -2 }}
+                        transition={{ type: "spring", stiffness: 300 }}
+                        className={`nav-link fw-medium ${
+                          active === link.href ? "active-link" : "text-2c3e50"
+                        }`}
+                        href={link.href}
+                      >
+                        {link.label}
+                      </motion.a>
+                    </li>
+                  ))}
+                </ul>
+              </div> */}
             </div>
+            <button
+              className="btn btn-sm ms-3"
+              onClick={() => {
+                document.body.classList.toggle("dark-mode");
+                setDarkMode(!darkMode);
+              }}
+            >
+              <i className={`fa-solid ${darkMode ? "text-black" : "text-white"} ${darkMode ? "fa-sun" : "fa-moon"} theme-icon fs-2`}></i>
+            </button>
           </div>
-          {/* <button
-            className="btn btn-sm ms-3"
-            onClick={() => {
-              document.body.classList.toggle("dark-mode");
-            }}
-          >
-            🌙
-          </button> */}
         </nav>
       </div>
     </header>

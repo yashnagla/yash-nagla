@@ -4,31 +4,28 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { motion } from "framer-motion";
 
 function Education() {
-
   const educationRef = useRef(null);
 
   useEffect(() => {
-  gsap.registerPlugin(ScrollTrigger);
+    gsap.registerPlugin(ScrollTrigger);
 
-  const ctx = gsap.context(() => {
+    const ctx = gsap.context(() => {
+      gsap.from(".education-card", {
+        y: 60,
+        scale: 0.95,
+        opacity: 0,
+        duration: 1,
+        ease: "power3.out",
+        scrollTrigger: {
+          trigger: ".education-section",
+          start: "top 75%",
+          toggleActions: "play none none none",
+        },
+      });
+    }, educationRef);
 
-    gsap.from(".education-card", {
-      y: 60,
-      scale: 0.95,
-      opacity: 0,
-      duration: 1,
-      ease: "power3.out",
-      scrollTrigger: {
-        trigger: ".education-section",
-        start: "top 75%",
-        toggleActions: "play none none none",
-      },
-    });
-
-  }, educationRef);
-
-  return () => ctx.revert();
-}, []);
+    return () => ctx.revert();
+  }, []);
 
   const educationData = [
     {
@@ -38,33 +35,50 @@ function Education() {
       duration: "2020 - 2024",
       iconWork: "fa-solid fa-briefcase",
       iconCalendar: "fa-solid fa-calendar",
+      iconPercentage: "fa-solid fa-percent",
+      percentage: '83',
+    },
+    {
+      degree: "Senior Secondary",
+      field: "Science Maths",
+      institution: "Bright Future Sr. Sec. School",
+      duration: "2019 - 202",
+      iconWork: "fa-solid fa-briefcase",
+      iconCalendar: "fa-solid fa-calendar",
+      iconPercentage: "fa-solid fa-percent",
+      percentage: '62',
     },
   ];
 
   return (
     <section
-  ref={educationRef}
-  className="education-section py-5 bg-light"
-  id="education"
->
+      ref={educationRef}
+      className="education-section py-3"
+      id="education"
+    >
       <div className="container">
-        <h2 className="text-center text-2c3e50 fw-semibold mb-5">
-          Education
-        </h2>
+        <h2 className="text-center text-2c3e50 fw-semibold mb-3">Education</h2>
 
         <div className="row g-4">
           {educationData.map((edu, index) => (
             <div className="col-12" key={index}>
               <motion.div
-  whileHover={{ y: -6 }}
-  transition={{ type: "spring", stiffness: 200 }}
-  className="border-left-4caf50 rounded-4 p-4 bg-white shadow-sm h-100 education-card"
-
+                whileHover={{ y: -6 }}
+                transition={{ type: "spring", stiffness: 200 }}
+                className="border-left-4caf50 rounded-4 p-4 bg-white shadow-sm h-100 education-card"
                 aria-label={`${edu.degree} in ${edu.field}`}
               >
-                <h3 className="fw-semibold text-2c3e50 mb-1">{edu.degree}</h3>
-                <h4 className="fw-normal text-3b6b26 mb-2">{edu.field}</h4>
-                <p className="mb-2 text-374151">
+                <div className="d-flex justify-content-between">
+                  <div className="">
+                    <h3 className="fw-semibold text-2c3e50 mb-1">{edu.degree}</h3>
+                    <h4 className="fw-normal text-3b6b26 mb-1">{edu.field}</h4>
+                  </div>
+                  <p className="d-flex align-items-center mb-0 text-4b5563">
+                    <i className={`${edu.iconPercentage} me-2 text-4caf50`}></i>
+                    {edu.percentage}
+                  </p>
+                </div>
+                <p className="mb-1 text-4b5563">
                   <i className={`${edu.iconWork} me-2 text-4caf50`}></i>
                   {edu.institution}
                 </p>

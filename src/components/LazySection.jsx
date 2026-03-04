@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 
-function LazySection({ children, height = "100vh" }) {
+function LazySection({ children, height = "fit-content" }) {
   const ref = useRef(null);
   const [isVisible, setIsVisible] = useState(false);
 
