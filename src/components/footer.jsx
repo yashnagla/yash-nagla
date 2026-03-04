@@ -1,4 +1,32 @@
+import { useEffect, useRef } from "react";
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { motion } from "framer-motion";
+
 function Footer() {
+  const footerRef = useRef(null);
+
+  useEffect(() => {
+    gsap.registerPlugin(ScrollTrigger);
+
+    const ctx = gsap.context(() => {
+      gsap.from(".footer-animate", {
+        y: 40,
+        opacity: 0,
+        duration: 1,
+        stagger: 0.2,
+        ease: "power3.out",
+        scrollTrigger: {
+          trigger: ".footer-section",
+          start: "top 85%",
+          toggleActions: "play none none none",
+        },
+      });
+    }, footerRef);
+
+    return () => ctx.revert();
+  }, []);
+
   const socialLinks = [
     {
       href: "https://github.com/yashnagla",
@@ -18,19 +46,21 @@ function Footer() {
   ];
 
   return (
-    <footer className="bg-2c3e50 text-white">
+    <footer ref={footerRef} className="bg-2c3e50 text-white footer-section">
       {/* Main Footer Section */}
       <div className="container-fluid py-5">
         <div className="container p-0">
           <div className="d-flex flex-column flex-md-row justify-content-between align-items-center text-center text-md-start gap-4">
             {/* Left Section */}
-            <div>
+            <div className="footer-animate">
               <h2 className="fw-semibold m-0">Yash Nagla</h2>
-              <h3 className="fs-5 text-light m-0">Associate Software Developer</h3>
+              <h3 className="fs-5 text-light m-0">
+                Associate Software Developer
+              </h3>
             </div>
 
             {/* Contact / Social Section */}
-            <div>
+            <div className="footer-animate">
               <h3 className="fw-semibold mb-3">Get in Touch</h3>
               <div className="d-flex justify-content-center justify-content-md-start gap-3">
                 {socialLinks.map((link, index) => (
@@ -42,9 +72,11 @@ function Footer() {
                     rel="noopener noreferrer"
                     className="text-white"
                   >
-                    <i
-                      className={`${link.icon} fs-3 p-2 rounded-circle bg-1e3e50 hover-opacity`}
-                    ></i>
+                    <motion.i
+                      whileHover={{ scale: 1.2, rotate: 10 }}
+                      transition={{ type: "spring", stiffness: 300 }}
+                      className={`${link.icon} fs-3 p-2 rounded-circle bg-1e3e50`}
+                    />
                   </a>
                 ))}
               </div>
@@ -54,9 +86,10 @@ function Footer() {
       </div>
 
       {/* Bottom Copyright */}
-      <div className="py-3 border-top border-secondary text-center fs-6">
+      <div className="py-3 border-top border-secondary text-center fs-6 footer-animate">
         <p className="m-0">
-          © {new Date().getFullYear()} <strong>Yash Nagla</strong>. All rights reserved.
+          © {new Date().getFullYear()} <strong>Yash Nagla</strong>. All rights
+          reserved.
         </p>
       </div>
     </footer>
