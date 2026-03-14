@@ -78,7 +78,7 @@ function Projects() {
 
         <div className="row g-4">
           {projectData.map((project, index) => (
-            <div className="col-12 px-4 px-xl-0" key={index}>
+            <div className="col-12 px-4" key={index}>
               <motion.div
                 whileHover={{ y: -6 }}
                 transition={{ type: "spring", stiffness: 200 }}

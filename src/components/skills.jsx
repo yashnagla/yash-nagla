@@ -79,9 +79,9 @@ function Skills() {
         {/* Section Heading */}
         <h2 className="text-center text-2c3e50 fw-semibold mb-4">Skills</h2>
 
-        <div className="row justify-content-center mb-2">
+        <div className="row justify-content-center gap- mb-2">
           {/* Frontend Skills */}
-          <div className="col-12 col-md-6 mb-2">
+          <div className="col-12 col-md-6 mb-4 mb-lg-0">
             <div className="card p-3 shadow h-100 skills-card">
               <div className="card-header bg-transparent border-0 d-flex align-items-center gap-3">
                 <img
@@ -104,7 +104,7 @@ function Skills() {
           </div>
 
           {/* Other Skills */}
-          <div className="col-12 col-md-6 mb-2">
+          <div className="col-12 col-md-6">
             <div className="card p-3 shadow h-100 skills-card">
               <div className="card-header bg-transparent border-0 d-flex align-items-center gap-3">
                 <img
@@ -117,8 +117,6 @@ function Skills() {
                   Other Skills
                 </h3>
               </div>
-
-              <div className="card-body">
                 <div className="skill-grid">
                   {otherSkills.map((skill, index) => (
                     <div className="skill-item" key={index}>
@@ -127,7 +125,6 @@ function Skills() {
                     </div>
                   ))}
                 </div>
-              </div>
             </div>
           </div>
         </div>

@@ -234,8 +234,9 @@ body {
     position: fixed;
     top: 0;
     left: 0;
-    height: 3px;
+    height: 7px;
     width: 0%;
+    border-radius: 0 0 70px 0;
     background: linear-gradient(90deg, #4caf50, #81c784);
     z-index: 9999;
 }
@@ -257,8 +258,8 @@ body {
 }
 
 .cursor {
-    width: 20px;
-    height: 20px;
+    width: 25px;
+    height: 25px;
     border: 3px solid #4caf50;
     border-radius: 50%;
     position: fixed;
@@ -270,7 +271,7 @@ body {
 body.dark-mode {
     background-color: #121212;
     color: #f1f1f1;
-    transition: all 0.5s ease;
+    transition: all 1s ease;
 }
 
 body.dark-mode .bg-white, body.dark-mode .bg-light {
