@@ -49,7 +49,7 @@ function Footer() {
     <footer ref={footerRef} className="bg-2c3e50 text-white footer-section">
       {/* Main Footer Section */}
       <div className="container-fluid py-5">
-        <div className="container p-0">
+        <div className="container">
           <div className="d-flex flex-column flex-md-row justify-content-between align-items-center text-center text-md-start gap-4">
             {/* Left Section */}
             <div className="footer-animate">
@@ -73,9 +73,9 @@ function Footer() {
                     className="text-white"
                   >
                     <motion.i
-                      whileHover={{ scale: 1.2, rotate: 10 }}
+                      whileHover={{ scale: 1.2, rotate: 50 }}
                       transition={{ type: "spring", stiffness: 300 }}
-                      className={`${link.icon} fs-2 p-2 rounded-circle`}
+                      className={`${link.icon} text-white fs-2 p-2 rounded-circle`}
                     />
                   </a>
                 ))}
@@ -88,8 +88,7 @@ function Footer() {
       {/* Bottom Copyright */}
       <div className="py-3 border-top border-secondary text-center fs-6 footer-animate">
         <p className="m-0">
-          &copy; {new Date().getFullYear()} <strong>Yash Nagla</strong>. All rights
-          reserved.
+          &copy; {new Date().getFullYear()} <strong>Yash Nagla</strong>. All rights reserved.
         </p>
       </div>
     </footer>

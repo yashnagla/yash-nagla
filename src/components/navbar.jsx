@@ -106,7 +106,7 @@ function Navbar() {
       <div className="container p-0">
         <nav className="navbar navbar-expand-lg w-100" id="navBar">
           <div className="d-flex justify-content-between w-100">
-            <div className="container-fluid d-flex justify-content-between align-items-center px-1 p-lg-0 fs-5">
+            <div className="container-fluid d-flex justify-content-between align-items-center px-0 p-lg-0 fs-5">
               {/* Brand */}
               <a
                 href="#main-section"
@@ -143,7 +143,7 @@ function Navbar() {
                     <motion.i
                       whileHover={{ scale: 1.2, rotate: 10 }}
                       transition={{ type: "spring", stiffness: 300 }}
-                      className={`${link.icon} ${darkMode ? "text-black" : "text-white"} theme-icon fs-2`}
+                      className={`${link.icon} text-2c3e50 theme-icon fs-2`}
                     />
                   </a>
                 ))}
@@ -178,7 +178,7 @@ function Navbar() {
                 setDarkMode(!darkMode);
               }}
             >
-              <i className={`fa-solid ${darkMode ? "text-black" : "text-white"} ${darkMode ? "fa-sun" : "fa-moon"} theme-icon fs-2`}></i>
+              <i className={`fa-solid text-2c3e50 ${darkMode ? "fa-sun" : "fa-moon"} theme-icon fs-2`}></i>
             </button>
           </div>
         </nav>

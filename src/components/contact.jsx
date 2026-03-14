@@ -98,14 +98,14 @@ function Contact() {
       className="contact-section py-3"
       id="contact"
     >
-      <div className="container">
+      <div className="container p-md-0">
         <h2 className="text-center text-2c3e50 fw-semibold mb-3">
           Get In Touch
         </h2>
 
-        <div className="row g-3 px-3">
+        <div className="row g-3 px-2 px-lg-3">
           {/* Contact Info Section */}
-          <div className="col-12 col-lg-4 p-4 rounded-4 bg-light">
+          <div className="col-12 col-lg-4 p-4 rounded-4 bg-white">
             <h3 className="text-2c3e50 fw-semibold mb-2">
               Contact Information
             </h3>
@@ -154,7 +154,7 @@ function Contact() {
           </div>
 
           {/* Contact Form Section */}
-          <div className="col-12 col-lg-8 ps-lg-5 pe-lg-0">
+          <div className="col-12 col-lg-8 ps-0 ps-lg-5">
             <div className="bg-white rounded-4 p-4">
               <form
                 className="contact-form"

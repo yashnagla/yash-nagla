@@ -42,7 +42,7 @@ function Education() {
       degree: "Senior Secondary",
       field: "Science Maths",
       institution: "Bright Future Sr. Sec. School",
-      duration: "2019 - 202",
+      duration: "2019 - 2020",
       iconWork: "fa-solid fa-briefcase",
       iconCalendar: "fa-solid fa-calendar",
       iconPercentage: "fa-solid fa-percent",
@@ -56,7 +56,7 @@ function Education() {
       className="education-section py-3"
       id="education"
     >
-      <div className="container">
+      <div className="container p-md-0">
         <h2 className="text-center text-2c3e50 fw-semibold mb-3">Education</h2>
 
         <div className="row g-4">
@@ -73,9 +73,9 @@ function Education() {
                     <h3 className="fw-semibold text-2c3e50 mb-1">{edu.degree}</h3>
                     <h4 className="fw-normal text-3b6b26 mb-1">{edu.field}</h4>
                   </div>
-                  <p className="d-flex align-items-center mb-0 text-4b5563">
-                    <i className={`${edu.iconPercentage} me-2 text-4caf50`}></i>
+                  <p className="d-flex align-items-center mb-0 gap-1 text-4b5563">
                     {edu.percentage}
+                    <i className={`${edu.iconPercentage} me-2 text-4caf50`}></i>
                   </p>
                 </div>
                 <p className="mb-1 text-4b5563">

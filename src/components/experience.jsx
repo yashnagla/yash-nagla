@@ -72,7 +72,7 @@ function Experience() {
       className="experience-section py-3"
       id="experience"
     >
-      <div className="container">
+      <div className="container p-md-0">
         <h2 className="text-center text-2c3e50 fw-semibold mb-3">Experience</h2>
 
         <div className="row g-4">

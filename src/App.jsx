@@ -49,14 +49,14 @@ function App() {
   return (
     <>
       {/* <Loader /> */}
-      <div className="cursor"></div>
+      <div className="cursor d-none d-lg-flex"></div>
       {/* Hidden honeypot link for bot detection */}
       <a href="/hidden-trap" style={{ display: "none" }}>
         Do not click
       </a>
 
       <div id="hero" className="h-100vh">
-        <div className="scroll-progress"></div>
+        <div className="scroll-progress d-lg-none"></div>
         <Navbar />
 
         <Main />
