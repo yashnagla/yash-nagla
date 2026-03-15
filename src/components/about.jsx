@@ -15,7 +15,7 @@ function About() {
   };
 
   return (
-    <section className="container-fluid py-5" id="about">
+    <section className="container-fluid py-3" id="about">
       <div className="container p-0">
         {/* Section Title */}
         <h2 className="text-center text-2c3e50 fw-semibold mb-4">

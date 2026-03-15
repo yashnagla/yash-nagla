@@ -70,23 +70,23 @@ function Projects() {
   return (
     <section
       ref={projectsRef}
-      className="container-fluid py-5 projects-section"
+      className="container-fluid py-3 projects-section"
       id="project"
     >
       <div className="container p-0">
-        <h2 className="text-center text-2c3e50 fw-semibold mb-4">Projects</h2>
+        <h2 className="text-center text-2c3e50 fw-semibold mb-3">Projects</h2>
 
         <div className="row g-4">
           {projectData.map((project, index) => (
-            <div className="col-12" key={index}>
+            <div className="col-12 px-4" key={index}>
               <motion.div
                 whileHover={{ y: -6 }}
                 transition={{ type: "spring", stiffness: 200 }}
-                className="row p-3 shadow rounded-3 bg-white project-card"
+                className="row p-3 shadow rounded-3 bg-white project-card gx-4"
               >
                 {/* Project Image */}
                 <motion.div
-                  className="col-12 col-lg-6 mb-3 mb-lg-0 project-image"
+                  className="col-12 col-lg-6 mb-3 p-0 mb-lg-0 project-image"
                   whileHover={{ rotateY: 6, rotateX: 4, scale: 1.02 }}
                   transition={{ type: "spring", stiffness: 150 }}
                   style={{ transformStyle: "preserve-3d" }}
@@ -99,7 +99,7 @@ function Projects() {
                 </motion.div>
 
                 {/* Project Details */}
-                <div className="col-12 col-lg-6 d-flex flex-column justify-content-center">
+                <div className="col-12 col-lg-6 d-flex flex-column justify-content-center ps-lg-4">
                   <h3 className="text-2c3e50 mb-2">{project.title}</h3>
 
                   <div
@@ -107,7 +107,7 @@ function Projects() {
                     style={{ height: "220px", scrollbarWidth: "none" }}
                   >
                     {project.description.map((para, i) => (
-                      <p className="mb-2" key={i}>
+                      <p className="mb-2 text-4b5563" key={i}>
                         {para}
                       </p>
                     ))}

@@ -49,50 +49,50 @@ function App() {
   return (
     <>
       {/* <Loader /> */}
-      <div className="cursor"></div>
+      <div className="cursor d-none d-lg-flex"></div>
       {/* Hidden honeypot link for bot detection */}
       <a href="/hidden-trap" style={{ display: "none" }}>
         Do not click
       </a>
 
       <div id="hero" className="h-100vh">
-        <div className="scroll-progress"></div>
+        <div className="scroll-progress d-lg-none"></div>
         <Navbar />
 
         <Main />
       </div>
 
-      <LazySection height="70vh">
+      <LazySection>
         <section id="about">
           <About />
         </section>
       </LazySection>
 
-      <LazySection height="70vh">
+      <LazySection>
         <section id="skills">
           <Skills />
         </section>
       </LazySection>
 
-      <LazySection height="70vh">
+      <LazySection>
         <section id="projects">
           <Projects />
         </section>
       </LazySection>
 
-      <LazySection height="70vh">
+      <LazySection>
         <section id="experience">
           <Experience />
         </section>
       </LazySection>
 
-      <LazySection height="70vh">
+      <LazySection>
         <section id="education">
           <Education />
         </section>
       </LazySection>
 
-      <LazySection height="70vh">
+      <LazySection>
         <section id="contact">
           <Contact />
         </section>

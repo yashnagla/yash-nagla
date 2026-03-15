@@ -95,18 +95,18 @@ function Contact() {
   return (
     <section
       ref={contactRef}
-      className="contact-section py-5 bg-light"
+      className="contact-section py-3"
       id="contact"
     >
-      <div className="container">
-        <h2 className="text-center text-2c3e50 fw-semibold mb-5">
+      <div className="container p-md-0">
+        <h2 className="text-center text-2c3e50 fw-semibold mb-3">
           Get In Touch
         </h2>
 
-        <div className="row g-4">
+        <div className="row g-3 px-2 px-lg-3">
           {/* Contact Info Section */}
-          <div className="col-12 col-lg-4">
-            <h3 className="text-2c3e50 fw-semibold mb-4">
+          <div className="col-12 col-lg-4 p-4 rounded-4 bg-white">
+            <h3 className="text-2c3e50 fw-semibold mb-2">
               Contact Information
             </h3>
 
@@ -133,7 +133,7 @@ function Contact() {
               </a>
             ))}
 
-            <h4 className="text-2c3e50 mt-4 mb-3">Follow Me</h4>
+            <h4 className="text-2c3e50 mt-3 mb-3">Follow Me</h4>
             <div className="social-icons d-flex gap-3">
               {socialLinks.map((social, i) => (
                 <a
@@ -146,7 +146,7 @@ function Contact() {
                   <motion.i
                     whileHover={{ scale: 1.2, rotate: 8 }}
                     transition={{ type: "spring", stiffness: 300 }}
-                    className={`fa-brands ${social.icon} text-white bg-1e3e50 fs-3 p-2 rounded-circle`}
+                    className={`fa-brands ${social.icon} text-white bg-1e3e50 fs-2 p-2 rounded-circle`}
                   />
                 </a>
               ))}
@@ -154,58 +154,60 @@ function Contact() {
           </div>
 
           {/* Contact Form Section */}
-          <div className="col-12 col-lg-8">
-            <form
-              className="bg-white rounded-3 p-4 shadow-sm contact-form"
-              aria-label="Contact form"
-              onSubmit={(e) => e.preventDefault()}
-            >
-              <h3 className="text-2c3e50 mb-4">Send Me a Message</h3>
-
-              {[
-                { label: "Name", type: "text", id: "name" },
-                { label: "Email", type: "email", id: "email" },
-                { label: "Subject", type: "text", id: "subject" },
-              ].map((input, i) => (
-                <div className="input-group mb-3" key={i}>
-                  <span className="input-group-text" id={`${input.id}-label`}>
-                    {input.label}
-                  </span>
-                  <input
-                    type={input.type}
-                    className="form-control"
-                    id={input.id}
-                    aria-label={input.label}
-                    aria-describedby={`${input.id}-label`}
-                    required
-                  />
-                </div>
-              ))}
-
-              <div className="input-group mb-4">
-                <span className="input-group-text" id="message-label">
-                  Message
-                </span>
-                <textarea
-                  className="form-control"
-                  id="message"
-                  rows="4"
-                  aria-label="Message"
-                  aria-describedby="message-label"
-                  required
-                ></textarea>
-              </div>
-
-              <motion.button
-                type="submit"
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.99 }}
-                transition={{ type: "spring", stiffness: 300 }}
-                className="btn bg-2c3e50 text-white fw-semibold"
+          <div className="col-12 col-lg-8 ps-0 ps-lg-5">
+            <div className="bg-white rounded-4 p-4">
+              <form
+                className="contact-form"
+                aria-label="Contact form"
+                onSubmit={(e) => e.preventDefault()}
               >
-                Submit
-              </motion.button>
-            </form>
+                <h3 className="text-2c3e50 mb-2">Send Me a Message</h3>
+
+                {[
+                  { label: "Name", type: "text", id: "name" },
+                  { label: "Email", type: "email", id: "email" },
+                  { label: "Subject", type: "text", id: "subject" },
+                ].map((input, i) => (
+                  <div className="input-group mb-3" key={i}>
+                    <span className="input-group-text w-25" id={`${input.id}-label`}>
+                      {input.label}
+                    </span>
+                    <input
+                      type={input.type}
+                      className="form-control"
+                      id={input.id}
+                      aria-label={input.label}
+                      aria-describedby={`${input.id}-label`}
+                      required
+                    />
+                  </div>
+                ))}
+
+                <div className="input-group mb-4">
+                  <span className="input-group-text w-25" id="message-label">
+                    Message
+                  </span>
+                  <textarea
+                    className="form-control"
+                    id="message"
+                    rows="2"
+                    aria-label="Message"
+                    aria-describedby="message-label"
+                    required
+                  ></textarea>
+                </div>
+
+                <motion.button
+                  type="submit"
+                  whileHover={{ scale: 1.05 }}
+                  whileTap={{ scale: 0.99 }}
+                  transition={{ type: "spring", stiffness: 300 }}
+                  className="btn bg-2c3e50 text-white fw-semibold"
+                >
+                  Submit
+                </motion.button>
+              </form>
+            </div>
           </div>
         </div>
       </div>

@@ -42,9 +42,9 @@ function Experience() {
 
   const experienceData = [
     {
-      title: "Associate Software Developer",
-      company: "KVON Tech",
-      duration: "January 2025 - Present",
+      title: "Frontend Developer",
+      company: "Mount Saffron Technologies and Consultant Pvt Ltd",
+      duration: "September 2026 - Present",
       responsibilities: [
         "Develop and maintain responsive web applications using React, TypeScript, and Tailwind CSS.",
         "Collaborate with senior developers to implement new features and fix bugs.",
@@ -53,14 +53,15 @@ function Experience() {
       ],
     },
     {
-      title: "Front-end Web Intern",
+      title: "Associate Software Developer",
       company: "KVON Tech",
-      duration: "September 2024 - December 2024",
+      duration: "September 2024 - May 2026",
       responsibilities: [
-        "Developed responsive and user-friendly UI components using React and Tailwind CSS.",
+        "Develop and maintain responsive web applications using React and Tailwind CSS.",
+        "Collaborate with senior developers to implement new features and fix bugs.",
+        "Participate in code reviews and provide constructive feedback to team members.",
+        "Assist in the implementation of security best practices in web applications.",
         "Collaborated with senior developers to improve project performance and scalability.",
-        "Assisted in debugging, testing, and optimizing existing web applications.",
-        "Gained hands-on experience with Git, REST APIs, and project workflows.",
       ],
     },
   ];
@@ -68,11 +69,11 @@ function Experience() {
   return (
     <section
       ref={experienceRef}
-      className="experience-section py-5 bg-light"
+      className="experience-section py-3"
       id="experience"
     >
-      <div className="container">
-        <h2 className="text-center text-2c3e50 fw-semibold mb-5">Experience</h2>
+      <div className="container p-md-0">
+        <h2 className="text-center text-2c3e50 fw-semibold mb-3">Experience</h2>
 
         <div className="row g-4">
           {experienceData.map((exp, index) => (
@@ -80,15 +81,15 @@ function Experience() {
               <motion.div
                 whileHover={{ y: -6 }}
                 transition={{ type: "spring", stiffness: 200 }}
-                className="border-left-4caf50 rounded-4 p-4 bg-white shadow-sm h-100 experience-card"
+                className="border-left-4caf50 rounded-4 p-4 bg-light shadow-sm h-100 experience-card"
                 aria-label={`${exp.title} at ${exp.company}`}
               >
                 <h3 className="fw-semibold text-2c3e50 mb-1">{exp.title}</h3>
-                <p className="mb-2 text-3b6b26">
+                <p className="mb-1 text-3b6b26">
                   <i className="fa-solid fa-briefcase me-2 text-4caf50"></i>
                   {exp.company}
                 </p>
-                <p className="mb-3 text-4b5563">
+                <p className="mb-1 text-4b5563">
                   <i className="fa-solid fa-calendar me-2 text-4caf50"></i>
                   {exp.duration}
                 </p>
