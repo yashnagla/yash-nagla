@@ -48,7 +48,7 @@ function App() {
 
   return (
     <>
-      <Loader />
+      {/* <Loader /> */}
       <div className="cursor"></div>
       {/* Hidden honeypot link for bot detection */}
       <a href="/hidden-trap" style={{ display: "none" }}>
