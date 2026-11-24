@@ -7,6 +7,18 @@ import git from "../image/icons/git-github.svg";
 import responsiveDesign from "../image/icons/responsive-design.svg";
 import sql from "../image/icons/sql.svg";
 
+import HTML5 from "../image/icons/HTML5.svg";
+import CSS3 from "../image/icons/CSS3.svg";
+import Bootstrap from "../image/icons/Bootstrap.svg";
+import TailwindCSS from "../image/icons/TailwindCSS.svg";
+import JavaScript from "../image/icons/JavaScript.svg";
+import React from "../image/icons/React.svg";
+
+import Git from "../image/icons/Git.svg";
+import GitHub from "../image/icons/GitHub.svg";
+import MySQL from "../image/icons/MySQL.svg";
+import NodeJS from "../image/icons/NodeJS.svg";
+
 function Skills() {
   const skillsRef = useRef(null);
 
@@ -49,22 +61,22 @@ function Skills() {
   }, []);
 
   const frontendSkills = [
-    { name: "HTML5", icon: "fa-brands fa-html5" },
-    { name: "CSS3", icon: "fa-brands fa-css3-alt" },
-    { name: "JavaScript", icon: "fa-brands fa-js" },
-    { name: "React", icon: "fa-brands fa-react" },
-    { name: "Tailwind", icon: "fa-brands fa-tailwind-css" },
-    { name: "Bootstrap", icon: "fa-brands fa-bootstrap" },
+    { name: "HTML5", icon: HTML5 },
+    { name: "CSS3", icon: CSS3 },
+    { name: "JavaScript", icon: JavaScript },
+    { name: "Tailwind", icon: TailwindCSS },
+    { name: "React", icon: React },
+    { name: "Bootstrap", icon: Bootstrap },
     { name: "REST API", icon: "fa-solid fa-code" },
   ];
-
   const backendSkills = [
-    { name: "NodeJS", icon: "fa-node-js" },
-    { name: "MySQL", icon: "fa-database" },
+    { name: "NodeJS", icon: NodeJS },
+    { name: "MySQL", icon: MySQL },
   ];
 
   const otherSkills = [
-    { name: "Git & GitHub", icon: "fa-brands fa-github" },
+    { name: "Git", icon: Git },
+    { name: "GitHub", icon: GitHub },
     { name: "Responsive Design", icon: "fa-solid fa-mobile-screen" },
     // { name: "MySQL", icon: "fa-solid fa-database" },
   ];
@@ -81,7 +93,7 @@ function Skills() {
 
         <div className="row justify-content-center gap- mb-2">
           {/* Frontend Skills */}
-          <div className="col-12 col-md-6 mb-4 mb-lg-0">
+          {/* <div className="col-12 col-md-6 mb-4 mb-lg-0">
             <div className="card p-3 shadow h-100 skills-card">
               <div className="card-header bg-transparent border-0 d-flex align-items-center gap-3">
                 <img
@@ -101,6 +113,43 @@ function Skills() {
                 ))}
               </div>
             </div>
+          </div> */}
+
+          <div className="col-12 col-md-6">
+            <div className="card p-3 shadow h-100 skills-card">
+              <div className="card-header bg-transparent border-0 d-flex align-items-center gap-3">
+                <img
+                  loading="lazy"
+                  src={frontend}
+                  className="img-fluid"
+                  alt="Frontend Icon"
+                />
+                <h3 className="fs-5 fw-semibold text-2c3e50 m-0">Frontend</h3>
+              </div>
+              <div className="skill-grid">
+                {frontendSkills.map((skill, index) => {
+                  const isFaIcon =
+                    typeof skill.icon === "string" &&
+                    skill.icon.startsWith("fa-");
+
+                  return (
+                    <div className="skill-item" key={index}>
+                      {isFaIcon ? (
+                        <i className={`${skill.icon} skill-icon`}></i>
+                      ) : (
+                        <img
+                          src={skill.icon}
+                          alt={skill.name}
+                          className="skill-icon"
+                          loading="lazy"
+                        />
+                      )}
+                      <span>{skill.name}</span>
+                    </div>
+                  );
+                })}
+              </div>
+            </div>
           </div>
 
           {/* Other Skills */}
@@ -117,14 +166,29 @@ function Skills() {
                   Other Skills
                 </h3>
               </div>
-                <div className="skill-grid">
-                  {otherSkills.map((skill, index) => (
+              <div className="skill-grid">
+                {otherSkills.map((skill, index) => {
+                  const isFaIcon =
+                    typeof skill.icon === "string" &&
+                    skill.icon.startsWith("fa-");
+
+                  return (
                     <div className="skill-item" key={index}>
-                      <i className={`${skill.icon} skill-icon`}></i>
+                      {isFaIcon ? (
+                        <i className={`${skill.icon} skill-icon`}></i>
+                      ) : (
+                        <img
+                          src={skill.icon}
+                          alt={skill.name}
+                          className="skill-icon"
+                          loading="lazy"
+                        />
+                      )}
                       <span>{skill.name}</span>
                     </div>
-                  ))}
-                </div>
+                  );
+                })}
+              </div>
             </div>
           </div>
         </div>
